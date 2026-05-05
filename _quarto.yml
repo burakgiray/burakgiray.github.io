@@ -1,0 +1,44 @@
+project:
+  type: website
+
+website:
+  title: "Burak Giray"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+      - href: publications.qmd
+        text: Publications
+
+      - href: teaching.qmd
+        text: Teaching
+
+ #     - href: projects.qmd
+ #      text: Projects
+
+      - href: cv.qmd
+        text: CV
+
+  #    - href: blog.qmd
+  #      text: Blog
+
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/burak-giray-373205368
+        aria-label: LinkedIn
+
+      - icon: envelope
+        href: mailto:giray.burak@tum.de
+        aria-label: Email
+
+format:
+  html:
+    theme:
+       - flatly
+       - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+

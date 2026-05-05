@@ -1,0 +1,111 @@
+---
+title: "Teaching"
+format:
+  html:
+    toc: false
+    theme: flatly
+    css: teaching.css
+---
+
+<!-- =========================
+     TUM
+========================= -->
+<details class="institution tum">
+<summary>Technical University of Munich</summary>
+
+<details class="module">
+<summary>
+<strong>SOT86705 – Disruptions in Governance and Technology</strong>
+<span class="module-meta">Lecturer · Summer 2024, Summer 2026 (G)</span>
+</summary>
+<ul>
+  <li>Civil Conflict and PeaceOperations in Times of Disruption</li>
+</ul>
+</details>
+
+<details class="module">
+<summary>
+<strong>SOT86707 – International Security</strong>
+<span class="module-meta">Lecturer · Winter 2024, Summer 2025, Winter 2025 (G)</span>
+</summary>
+<ul>
+  <li>Theoretical Understanding of Interstate and Intrastate Conflicts</li>
+  <li>Conflict Resolution Strategies for Peace</li>
+</ul>
+</details>
+
+<details class="module">
+<summary>
+<strong>SOT86100 – Global Governance</strong>
+<span class="module-meta">Lecturer · Winter 2025 (G)</span>
+</summary>
+<ul>
+  <li>Decoding Global Politics: Text as Data in International Relations</li>
+</ul>
+</details>
+
+
+<details class="module">
+<summary>
+<strong>POL60701 – Digital Transformations in Europe</strong>
+<span class="module-meta">Lecturer · Winter 2024 (G)</span>
+</summary>
+<ul>
+  <li>Textual Data Analytics in EU Contexts</li>
+</ul>
+</details>
+
+
+</details>
+
+<!-- =========================
+     HERTIE
+========================= -->
+<details class="institution hertie">
+<summary>Hertie School</summary>
+
+<details class="module">
+<summary>
+<strong>GRAD‑E1450 – Origins of Conflict and Pathways to Peace</strong>
+<span class="module-meta">Lecturer · Spring 2024 (G)</span>
+</summary>
+</details>
+
+</details>
+
+<!-- =========================
+     UH
+========================= -->
+<details class="institution uh">
+<summary>University of Houston</summary>
+
+<details class="module">
+<summary>
+<strong>POLS 3389 – European Union Politics</strong>
+<span class="module-meta">Lecturer · Spring 2021 (U)</span>
+</summary>
+</details>
+
+<details class="module">
+<summary>
+<strong>POLS 6481 – Quantitative Methods II</strong>
+<span class="module-meta">Lab Assistant · Spring 2020 (G)</span>
+</summary>
+</details>
+
+<details class="module">
+<summary>
+<strong>POLS 6480 – Quantitative Methods I</strong>
+<span class="module-meta">Lab Assistant · Fall 2019 (G)</span>
+</summary>
+</details>
+
+</details>
+
+<!-- LAST INSTITUTION DETAILS ABOVE -->
+
+</details>
+
+<div class="teaching-footnote">
+  U: Undergraduate level &nbsp;|&nbsp; G: Graduate level
+</div>
