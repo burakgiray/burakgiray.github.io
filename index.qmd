@@ -283,7 +283,7 @@ Experimental design, panel data analysis, time‑series methods, difference‑in
 ## Education
 
 | Year | Degree |
-|-------------------------------|-----------------------------------------|
+|----|----|
 | 2022 | **Ph.D. in Political Science** (major: International Relations; minor: Comparative Politics), University of Houston, Texas, United States |
 | 2016 | **M.A. in International Relations**, Social Sciences University of Ankara, Ankara, Turkey |
 | 2014 | **B.A. in Translation Studies & Political Science**, Çankaya University, Ankara, Turkey |

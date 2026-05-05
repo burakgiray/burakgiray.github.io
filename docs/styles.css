@@ -1,0 +1,5 @@
+/* White navbar icons */
+.navbar .nav-link i,
+.navbar .bi {
+  color: #ffffff !important;
+}
