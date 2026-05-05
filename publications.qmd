@@ -8,6 +8,7 @@ format:
     css: styles.css
 ---
 
+```{=html}
 <style>
 h2 {
   border-bottom: 2px solid #eaeaea;
@@ -45,87 +46,64 @@ a:hover {
   border-top: 1px solid #e5e5e5;
 }
 </style>
+```
 
----
+------------------------------------------------------------------------
 
 ## Peer-Reviewed Articles
 
-::: {.publication}
-
-**Giray, Burak**, and J. Tyson Chatagnier. (2024). <span class="pub-title">Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns.</span> <span class="pub-journal">Political Research Quarterly, 77(1), 3–16.</span> <a href="https://doi.org/10.1177/10659129231190614">https://doi.org/10.1177/10659129231190614</a>
-
+::: publication
+**Giray, Burak**, and J. Tyson Chatagnier. (2024). [Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns.]{.pub-title} [Political Research Quarterly, 77(1), 3–16.]{.pub-journal} <a href="https://doi.org/10.1177/10659129231190614">https://doi.org/10.1177/10659129231190614</a>
 :::
 
-::: {.publication}
-
-**Giray, Burak.** (2023). <span class="pub-title">Do UN Missions Have an Expiration Date? Ideational Commitment to the UN and the Duration of Missions.</span> <span class="pub-journal">International Peacekeeping, 31(1), 1–28.</span> <a href="https://doi.org/10.1080/13533312.2023.2246362">https://doi.org/10.1080/13533312.2023.2246362</a>
-
+::: publication
+**Giray, Burak.** (2023). [Do UN Missions Have an Expiration Date? Ideational Commitment to the UN and the Duration of Missions.]{.pub-title} [International Peacekeeping, 31(1), 1–28.]{.pub-journal} <a href="https://doi.org/10.1080/13533312.2023.2246362">https://doi.org/10.1080/13533312.2023.2246362</a>
 :::
 
-::: {.publication}
-
-**Giray, Burak.** (2023). <span class="pub-title">Troop Providers’ Ideational Commitment to UN Peacekeeping and Effectiveness.</span> <span class="pub-journal">International Interactions, 49(3), 372–400.</span> <a href="https://doi.org/10.1080/03050629.2023.2184813">https://doi.org/10.1080/03050629.2023.2184813</a>
-
+::: publication
+**Giray, Burak.** (2023). [Troop Providers’ Ideational Commitment to UN Peacekeeping and Effectiveness.]{.pub-title} [International Interactions, 49(3), 372–400.]{.pub-journal} <a href="https://doi.org/10.1080/03050629.2023.2184813">https://doi.org/10.1080/03050629.2023.2184813</a>
 :::
 
-::: {.publication}
-
-**Giray, Burak.** (2022). <span class="pub-title">Public Support for UN Missions and Attacks on Peacekeepers: Evidence from the Democratic Republic of the Congo.</span> <span class="pub-journal">Peace Economics, Peace Science and Public Policy, 28(4), 305–332.</span> <a href="https://doi.org/10.1515/peps-2022-0028">https://doi.org/10.1515/peps-2022-0028</a>
-
+::: publication
+**Giray, Burak.** (2022). [Public Support for UN Missions and Attacks on Peacekeepers: Evidence from the Democratic Republic of the Congo.]{.pub-title} [Peace Economics, Peace Science and Public Policy, 28(4), 305–332.]{.pub-journal} <a href="https://doi.org/10.1515/peps-2022-0028">https://doi.org/10.1515/peps-2022-0028</a>
 :::
 
----
+------------------------------------------------------------------------
 
 ## Manuscripts Under Review
 
-::: {.publication}
-
-<span class="pub-title">Winning Peace Indirectly: UN Peacekeepers’ Security Activities as a Driver of Local Support.</span> Revise and resubmit
-
+::: publication
+[Winning Peace Indirectly: UN Peacekeepers’ Security Activities as a Driver of Local Support.]{.pub-title} Revise and resubmit
 :::
 
-::: {.publication}
-
-<span class="pub-title">Introducing UNPAPS: A Dataset on United Nations Peacekeeping Activities and Public Services.</span> Under review
-
+::: publication
+[Introducing UNPAPS: A Dataset on United Nations Peacekeeping Activities and Public Services.]{.pub-title} Under review
 :::
 
-::: {.publication}
-
-<span class="pub-title">From Field to Feed: Troop-Contributing Countries in the Spotlight of UN Social Media.</span> Under review
-
+::: publication
+[From Field to Feed: Troop-Contributing Countries in the Spotlight of UN Social Media.]{.pub-title} Under review
 :::
 
-::: {.publication}
-
-<span class="pub-title">Repaying Debt with Land: Debt Diplomacy, Domestic Politics, and Land Transactions.</span> Under review (with Jonas Bunte and Patrick Shea)
-
+::: publication
+[Repaying Debt with Land: Debt Diplomacy, Domestic Politics, and Land Transactions.]{.pub-title} Under review (with Jonas Bunte and Patrick Shea)
 :::
 
----
+------------------------------------------------------------------------
 
 ## Work in Progress
 
-::: {.publication}
-
-<span class="pub-title">Out of Sight, Out of Rights? Digital Responses to Protests in Democratic Territorial Possessions.</span> (with J. Tyson Chatagnier)
-
+::: publication
+[Out of Sight, Out of Rights? Digital Responses to Protests in Democratic Territorial Possessions.]{.pub-title} (with J. Tyson Chatagnier)
 :::
 
-::: {.publication}
-
-<span class="pub-title">Calibrating Voices in the Modern Agora: Dynamics of Online Self-Censorship in Turkey.</span> (with Ilker Kalın)
-
+::: publication
+[Calibrating Voices in the Modern Agora: Dynamics of Online Self-Censorship in Turkey.]{.pub-title} (with Ilker Kalın)
 :::
 
-::: {.publication}
-
-<span class="pub-title">UN Peacekeeping on Social Media: Strategic Communication with Local and International Audiences.</span> (with Lisa Hultman)
-
+::: publication
+[UN Peacekeeping on Social Media: Strategic Communication with Local and International Audiences.]{.pub-title} (with Lisa Hultman)
 :::
 
-::: {.publication}
-
-<span class="pub-title">The Composition of Peacekeepers and the Timing of Post–Civil War Elections.</span>
-
+::: publication
+[The Composition of Peacekeepers and the Timing of Post–Civil War Elections.]{.pub-title}
 :::

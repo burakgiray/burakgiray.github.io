@@ -36,10 +36,11 @@ website:
 format:
   html:
     theme:
-       - flatly
-       - brand
+      - flatly
+      - brand
     css: styles.css
     toc: true
+    navbar: true
 
 editor: visual
 
