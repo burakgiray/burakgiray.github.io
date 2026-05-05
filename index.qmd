@@ -7,6 +7,7 @@ format:
     page-layout: full
 ---
 
+```{=html}
 <style>
 body {
   max-width: 990px;
@@ -211,36 +212,29 @@ td:first-child {
 
 
 </style>
+```
 
-
-
-::: hero
-
+:::::::: hero
 <img src="profile.jpg"/>
 
-<div class="identity">
-  <div class="name">Burak Giray, Ph.D.</div>
-  <div class="role">Postdoctoral Researcher · TU Munich</div>
-
-  <div class="tagline">
-I study international organizations, civil war dynamics, and peacekeeping—
-focusing on when and how interventions work on the ground.
-
-<div class="links">
-  <a href="https://scholar.google.com/citations?user=SWWelg8AAAAJ&hl=en">🎓 Google Scholar</a>
-  <a href="https://orcid.org/0000-0002-3398-0901">🆔 ORCID</a>
-  <a href="https://x.com/Burak92Giray">🐦 Twitter / X</a>
-  <a href="https://bsky.app/profile/bgiray.bsky.social">🦋 Bluesky</a>
-  <a href="https://www.linkedin.com/in/burak-giray-373205368">💼 LinkedIn</a>
-  <a href="cv.pdf">📄 CV</a>
-</div>
-
-
-  </div>
-</div>
-
+::::::: identity
+::: name
+Burak Giray, Ph.D.
 :::
 
+::: role
+Postdoctoral Researcher · TU Munich
+:::
+
+:::: tagline
+I study international organizations, civil war dynamics, and peacekeeping— focusing on when and how interventions work on the ground.
+
+::: links
+<a href="https://scholar.google.com/citations?user=SWWelg8AAAAJ&hl=en">🎓 Google Scholar</a> <a href="https://orcid.org/0000-0002-3398-0901">🆔 ORCID</a> <a href="https://x.com/Burak92Giray">🐦 Twitter / X</a> <a href="https://bsky.app/profile/bgiray.bsky.social">🦋 Bluesky</a> <a href="https://www.linkedin.com/in/burak-giray-373205368">💼 LinkedIn</a> <a href="cv.pdf">📄 CV</a>
+:::
+::::
+:::::::
+::::::::
 
 ## About
 
@@ -251,8 +245,6 @@ My research examines the effectiveness of international organizations in conflic
 Previously, as a DAAD PRIME Fellow (2023–2024), I held positions at the Hertie School and Uppsala University. The fellowship enabled me to develop an original dataset tracking field-level peacekeeping activities across missions, allowing for more fine-grained analysis of how mandates are implemented and how peacekeepers influence conflict dynamics and local support.
 
 I received my Ph.D. in Political Science from the University of Houston. My dissertation, *"UN Peacekeeping Operations: Conflicting Interests and Effectiveness"*, examines how troop-contributing countries’ motivations shape mission outcomes and can undermine impartiality and civilian protection.
-
-
 
 ## Research Areas
 
@@ -280,12 +272,18 @@ Effectiveness, legitimacy, and operational dynamics of UN peacekeeping missions,
 
 </details>
 
-<details><summary><strong>Research Methods</strong></summary>Experimental design, panel data analysis, time‑series methods, difference‑in‑differences, interrupted time‑series designs, and causal mediation analysis.</details>
+<details>
+
+<summary><strong>Research Methods</strong></summary>
+
+Experimental design, panel data analysis, time‑series methods, difference‑in‑differences, interrupted time‑series designs, and causal mediation analysis.
+
+</details>
 
 ## Education
 
 | Year | Degree |
-|------|--------|
+|-------------------------------|-----------------------------------------|
 | 2022 | **Ph.D. in Political Science** (major: International Relations; minor: Comparative Politics), University of Houston, Texas, United States |
 | 2016 | **M.A. in International Relations**, Social Sciences University of Ankara, Ankara, Turkey |
 | 2014 | **B.A. in Translation Studies & Political Science**, Çankaya University, Ankara, Turkey |
