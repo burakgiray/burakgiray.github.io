@@ -25,20 +25,31 @@ website:
   #      text: Blog
 
     right:
-      - icon: linkedin
-        href: https://www.linkedin.com/in/burak-giray-373205368
-        aria-label: LinkedIn
+    - icon: search
+    - text: '<i class="ai ai-google-scholar"></i>'
+      href: https://scholar.google.com/citations?user=SWWelg8AAAAJ
+      aria-label: Google Scholar
+    - text: '<i class="ai ai-orcid"></i>'
+      href: https://orcid.org/0000-0002-3398-0901
+      aria-label: ORCID
+    - icon: envelope    
+      href: mailto:giray.burak@tum.de    
+      aria-label: Email
 
-      - icon: envelope
-        href: mailto:giray.burak@tum.de
-        aria-label: Email
 
+  
 format:
   html:
     theme:
       - flatly
       - brand
     css: styles.css
+    
+    include-in-header:
+      text: |
+        <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
     toc: true
     navbar: true
 

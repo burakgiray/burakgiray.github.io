@@ -3,3 +3,15 @@
 .navbar .bi {
   color: #ffffff !important;
 }
+
+/* Academicons (Scholar, ORCID) — size + baseline fix */
+.navbar i.ai {
+  font-size: 1.25rem;
+  position: relative;
+  top: 4px;   /* ↓ visually align with Bootstrap icons */
+}
+
+/* Bootstrap Icons (envelope) — keep natural baseline */
+.navbar .bi {
+  font-size: 1.15rem;
+}
