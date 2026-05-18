@@ -131,7 +131,7 @@ a:hover {
 :::
 
 ::: publication
-[Introducing UNPAPS: A Dataset on United Nations Peacekeeping Activities and Public Services.]{.pub-title} Under review
+[Learning from Social Media: New Evidence on Peacekeeping Activities and Effectiveness.]{.pub-title} Under review
 :::
 
 ::: publication
@@ -151,7 +151,7 @@ a:hover {
 :::
 
 ::: publication
-[Calibrating Voices in the Modern Agora: Dynamics of Online Self-Censorship in Turkey.]{.pub-title} (with Ilker Kalın)
+[Speaking Carefully: Comment Editing as a Behavioral Indicator of Political Self-Censorship.]{.pub-title} (with Ilker Kalın)
 :::
 
 ::: publication
