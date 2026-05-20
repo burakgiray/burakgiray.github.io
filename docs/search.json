@@ -46,7 +46,7 @@
     "href": "publications.html#manuscripts-under-review",
     "title": "Publications",
     "section": "Manuscripts Under Review",
-    "text": "Manuscripts Under Review\n\nWinning Peace Indirectly: UN Peacekeepers’ Security Activities as a Driver of Local Support. Revise and resubmit\n\n\nLearning from Social Media: New Evidence on Peacekeeping Activities and Effectiveness. Under review\n\n\nFrom Field to Feed: Troop-Contributing Countries in the Spotlight of UN Social Media. Under review\n\n\nRepaying Debt with Land: Debt Diplomacy, Domestic Politics, and Land Transactions. Under review (with Jonas Bunte and Patrick Shea)"
+    "text": "Manuscripts Under Review\n\nWinning Peace Indirectly: UN Peacekeepers’ Security Activities as a Driver of Local Support. Revise and resubmit\n\n\nOnline Communication and Peacekeeping: New Evidence on Operational Activities and Effectiveness. Under review\n\n\nFrom Field to Feed: Troop-Contributing Countries in the Spotlight of UN Social Media. Under review\n\n\nRepaying Debt with Land: Debt Diplomacy, Domestic Politics, and Land Transactions. Under review (with Jonas Bunte and Patrick Shea)"
   },
   {
     "objectID": "publications.html#work-in-progress",
@@ -60,7 +60,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "[[BibTeX]](#bibtex-giray-2024)\n:::\n\n### Citations\n\n```bibtex\n@article{Giray2024Election,\n  title   = {Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns},\n  author  = {Giray, Burak and Chatagnier, J. Tyson},\n  journal = {Political Research Quarterly},\n  volume  = {77},\n  number  = {1},\n  pages   = {3--16},\n  year    = {2024},\n  doi     = {10.1177/10659129231190614}\n}\n\nGiray, Burak. (2023). Do UN Missions Have an Expiration Date? Ideational Commitment to the UN and the Duration of Missions. International Peacekeeping, 31(1), 1–28. https://doi.org/10.1080/13533312.2023.2246362 \n\n\nGiray, Burak. (2023). Troop Providers’ Ideational Commitment to UN Peacekeeping and Effectiveness. International Interactions, 49(3), 372–400. https://doi.org/10.1080/03050629.2023.2184813 \n\n\nGiray, Burak. (2022). Public Support for UN Missions and Attacks on Peacekeepers: Evidence from the Democratic Republic of the Congo. Peace Economics, Peace Science and Public Policy, 28(4), 305–332. https://doi.org/10.1515/peps-2022-0028 \n\n\n\n\n\nWinning Peace Indirectly: UN Peacekeepers’ Security Activities as a Driver of Local Support. Revise and resubmit\n\n\nIntroducing UNPAPS: A Dataset on United Nations Peacekeeping Activities and Public Services. Under review\n\n\nFrom Field to Feed: Troop-Contributing Countries in the Spotlight of UN Social Media. Under review\n\n\nRepaying Debt with Land: Debt Diplomacy, Domestic Politics, and Land Transactions. Under review (with Jonas Bunte and Patrick Shea)\n\n\n\n\n\n\nOut of Sight, Out of Rights? Digital Responses to Protests in Democratic Territorial Possessions. (with J. Tyson Chatagnier)\n\n\nCalibrating Voices in the Modern Agora: Dynamics of Online Self-Censorship in Turkey. (with Ilker Kalın)\n\n\nUN Peacekeeping on Social Media: Strategic Communication with Local and International Audiences. (with Lisa Hultman)\n\n\nThe Composition of Peacekeepers and the Timing of Post–Civil War Elections."
+    "text": "```{=html}"
   },
   {
     "objectID": "research/election-accomplished/index.html#citation",

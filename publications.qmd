@@ -131,7 +131,7 @@ a:hover {
 :::
 
 ::: publication
-[Learning from Social Media: New Evidence on Peacekeeping Activities and Effectiveness.]{.pub-title} Under review
+[Online Communication and Peacekeeping: New Evidence on Operational Activities and Effectiveness.]{.pub-title} Under review
 :::
 
 ::: publication
