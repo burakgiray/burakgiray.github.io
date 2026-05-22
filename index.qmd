@@ -329,58 +329,39 @@ td:first-child {
 </style>
 ```
 
-:::::::::::: {.hero-card}
-
-:::: {.hero-photo}
+::::::::::: hero-card
+::: hero-photo
 ![](profile.jpg)
-::::
+:::
 
-:::: {.hero-main}
-
-::: {.name}
+:::::: hero-main
+::: name
 Burak Giray, Ph.D.
 :::
 
-::: {.role}
+::: role
 Postdoctoral Researcher · TUM
 :::
 
-::: {.tagline}
+::: tagline
 I study IOs, civil war dynamics, and UN peacekeeping, with a focus on how interventions shape conflict outcomes, mandate completions, and local legitimacy.
 :::
+::::::
 
-::::
-
-:::: {.hero-side}
-
-::: {.connect-title}
+::::: hero-side
+::: connect-title
 Connect with Me
 :::
 
-:::: {.hero-links}
+::: hero-links
+<a href="https://x.com/Burak92Giray"> Twitter [↗]{style="opacity:0.55;"} </a>
 
-<a href="https://x.com/Burak92Giray">
-<span>Twitter</span>
-<span style="opacity:0.55;">↗</span>
-</a>
+<a href="https://bsky.app/profile/bgiray.bsky.social"> Bluesky [↗]{style="opacity:0.55;"} </a>
 
-<a href="https://bsky.app/profile/bgiray.bsky.social">
-<span>Bluesky</span>
-<span style="opacity:0.55;">↗</span>
-</a>
-
-<a href="https://www.linkedin.com/in/burak-giray-373205368">
-<span>LinkedIn</span>
-<span style="opacity:0.55;">↗</span>
-</a>
-
-
-::::
-
-::::
-
-::::::::::::
-
+<a href="https://www.linkedin.com/in/burak-giray-373205368"> LinkedIn [↗]{style="opacity:0.55;"} </a>
+:::
+:::::
+:::::::::::
 
 ## About
 
@@ -395,6 +376,7 @@ I received my Ph.D. in Political Science from the University of Houston. My diss
 ## Research Areas
 
 <details>
+
 <summary>International Organizations and Global Governance</summary>
 
 Political behavior, institutional design, and effectiveness of international organizations, with a focus on UN-based institutions. Emphasis on cooperation problems, mandate implementation, and the role of legitimacy in shaping support for multilateral governance.
@@ -402,6 +384,7 @@ Political behavior, institutional design, and effectiveness of international org
 </details>
 
 <details>
+
 <summary>Civil War and Post-Conflict Dynamics</summary>
 
 Violence, intervention, and post-conflict trajectories in intrastate wars, with emphasis on local support, institutional engagement, and conflict outcomes.
@@ -409,6 +392,7 @@ Violence, intervention, and post-conflict trajectories in intrastate wars, with 
 </details>
 
 <details>
+
 <summary>UN Peacekeeping</summary>
 
 Effectiveness, legitimacy, operational dynamics, troop-contributing country behavior, and civilian protection outcomes in UN peacekeeping missions.
@@ -416,6 +400,7 @@ Effectiveness, legitimacy, operational dynamics, troop-contributing country beha
 </details>
 
 <details>
+
 <summary>Research Methods</summary>
 
 Experimental design, panel data analysis, time-series methods, duration analysis, difference-in-differences, interrupted time-series designs, and causal mediation analysis.
@@ -425,12 +410,10 @@ Experimental design, panel data analysis, time-series methods, duration analysis
 ## Education
 
 | Year | Degree |
-|------|------|
+|----|----|
 | 2022 | **Ph.D. in Political Science** (major: International Relations; minor: Comparative Politics), University of Houston, Texas, United States |
 | 2016 | **M.A. in International Relations**, Social Sciences University of Ankara, Ankara, Turkey |
 | 2014 | **B.A. in Translation Studies & Political Science**, Çankaya University, Ankara, Turkey |
-
-
 
 ## Where Academia Took Me
 
@@ -653,6 +636,4 @@ window.addEventListener('load', () => {
 
 });
 </script>
-
 ```
-
