@@ -1,0 +1,112 @@
+/* =========================
+   COLOR PALETTE (REFINED)
+========================= */
+:root {
+  --tum-accent: #0b4f8a;     /* muted TUM blue */
+  --hertie-accent: #6f1d46;  /* muted burgundy */
+  --uh-accent: #a5472a;      /* muted crimson */
+
+  --panel-bg: #fafafa;
+  --panel-border: #e3e3e3;
+  --module-bg: #ffffff;
+  --module-hover: #f2f4f6;
+}
+
+/* =========================
+   INSTITUTIONS (TOP LEVEL)
+========================= */
+details.institution {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+details.institution summary {
+  padding: 0.75rem 1.2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  background: transparent;
+}
+
+details.institution summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Accent bars instead of solid fills */
+details.institution.tum {
+  border-left: 6px solid var(--tum-accent);
+}
+
+details.institution.hertie {
+  border-left: 6px solid var(--hertie-accent);
+}
+
+details.institution.uh {
+  border-left: 6px solid var(--uh-accent);
+}
+
+/* inner spacing when open */
+details.institution > details {
+  margin: 1.1rem;
+}
+
+/* =========================
+   MODULES (SECOND LEVEL)
+========================= */
+details.module {
+  background: var(--module-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem 1rem;
+  transition: background 0.15s ease;
+}
+
+details.module[open],
+details.module:hover {
+  background: var(--module-hover);
+}
+
+details.module summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details.module summary::-webkit-details-marker {
+  display: none;
+}
+
+details.module strong {
+  display: block;
+  font-size: 1.03rem;
+  color: #222;
+}
+
+.module-meta {
+  font-size: 0.88rem;
+  color: #6c757d;
+}
+
+/* =========================
+   SEMINARS
+========================= */
+details.module ul {
+  margin-top: 0.6rem;
+  margin-left: 1.3rem;
+}
+
+details.module li {
+  margin-bottom: 0.35rem;
+}
+
+/* =========================
+   FOOTNOTE
+========================= */
+.teaching-footnote {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}

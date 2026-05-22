@@ -381,6 +381,7 @@ Connect with Me
 
 ::::::::::::
 
+
 ## About
 
 I am a Postdoctoral Researcher at the Munich School of Politics and Public Policy (Hochschule für Politik) at the Technical University of Munich.
@@ -428,3 +429,230 @@ Experimental design, panel data analysis, time-series methods, duration analysis
 | 2022 | **Ph.D. in Political Science** (major: International Relations; minor: Comparative Politics), University of Houston, Texas, United States |
 | 2016 | **M.A. in International Relations**, Social Sciences University of Ankara, Ankara, Turkey |
 | 2014 | **B.A. in Translation Studies & Political Science**, Çankaya University, Ankara, Turkey |
+
+
+
+## Where Academia Took Me
+
+This globe traces the academic institutions I have been affiliated with and the conferences where I have presented or contributed as a discussant. It illustrates the geographic scope of my training, research collaborations, and scholarly engagement.
+
+*(Click pins for details; zoom to explore.)*
+
+```{=html}
+<style>
+.fullwidth-globe {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  display: flex;
+  justify-content: center;
+  background: #ffffff; /* ✅ ensure full white */
+}
+
+#globeViz {
+  width: 100%;
+  max-width: 1100px;
+  height: 520px;
+  margin: 2rem auto;
+}
+</style>
+
+<div class="fullwidth-globe">
+  <div id="globeViz"></div>
+</div>
+
+<script src="https://unpkg.com/globe.gl"></script>
+
+<script>
+window.addEventListener('load', () => {
+
+  const container = document.getElementById('globeViz');
+
+  const globe = Globe()(container)
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .backgroundColor('#ffffff')   // ✅ pure white background
+    .width(container.clientWidth)
+    .height(container.clientHeight);
+
+  /* ============================
+     RESPONSIVE
+     ============================ */
+  window.addEventListener('resize', () => {
+    globe.width(container.clientWidth);
+    globe.height(container.clientHeight);
+  });
+
+  /* ============================
+     CAMERA
+     ============================ */
+  setTimeout(() => {
+    globe.pointOfView({ lat: 25, lng: 10, altitude: 2.3 }, 0);
+    globe.controls().target.set(0, 0, 0);
+    globe.controls().update();
+  }, 100);
+
+  /* ============================
+     WORK / EDUCATION (YELLOW)
+     ============================ */
+  const positions = [
+    {
+      lat: 48.1351, lon: 11.5820, type: "position",
+      label: "Technical University of Munich<br>Postdoctoral Researcher (2024–)"
+    },
+    {
+      lat: 52.5200, lon: 13.4050, type: "position",
+      label: "Hertie School<br>DAAD Postdoctoral Researcher (2023–2024)"
+    },
+    {
+      lat: 59.8586, lon: 17.6389, type: "position",
+      label: "Uppsala University<br>DAAD Visiting Researcher (2023–2024)"
+    },
+{
+  lat: 29.7604, lon: -95.3698, type: "position",
+  label: `University of Houston<br>
+  PhD Student & Graduate Assistant (2016–2022)<br>
+`
+}
+  ];
+
+  /* ============================
+     CONFERENCES (RED)
+     ============================ */
+  const conferences = [
+    {
+      lat: 49.0134, lon: 12.1016,
+      type: "conf",
+      label: "13th Annual Conference of the Leibniz Institute for East and Southeast European Studies (IOS) in 2026, Regensburg, Germany"
+    },
+    {
+      lat: 48.2005, lon: 12.7669,
+      type: "conf",
+      label: "Workshop on Conflict Dynamics organized by TUM in 2024 (invited as discussant), Raitenhaslach, Germany"
+    },
+    {
+      lat: 59.3293, lon: 18.0686,
+      type: "conf",
+      label: "The Future of Peace Operations and Military Interventions organized by Swedish Defence University in 2023 (invited as discussant), Stockholm, Sweden"
+    },
+    {
+      lat: 50.1109, lon: 8.6821,
+      type: "conf",
+      label: "AFK Workshop 2025, Frankfurt, Germany"
+    },
+    {
+      lat: 50.9375, lon: 6.9603,
+      type: "conf",
+      label: "EPSA 2024, Cologne, Germany"
+    },
+    {
+      lat: 41.3851, lon: 2.1734,
+      type: "conf",
+      label: "Jan Tinbergen European Peace Science Conference 2025, Barcelona, Spain"
+    },
+    {
+     lat: 39.9334, lon: 32.8597,
+      type: "conf",
+      label: "Eurasian Peace Science Conference 2024, Ankara, Turkey"
+    },
+    {
+      lat: 38.9072, lon: -77.0369,
+      type: "conf",
+      label: "APSA 2019, Washington D.C."
+    },
+    {
+      lat: 30.2747, lon: -98.8700,
+      type: "conf",
+      label: "Texas Triangle IR Conference 2019, Fredericksburg, Texas"
+    },
+    {
+      lat: 41.8781, lon: -87.6298,
+      type: "conf",
+      label: "MPSA 2023 / ISA 2025, Chicago, Illinois"
+    },
+    {
+      lat: 29.4241, lon: -98.4936,
+      type: "conf",
+      label: "SPSA 2022, San Antonio, Texas"
+    },
+    {
+      lat: 30.2672, lon: -97.7431,
+      type: "conf",
+      label: "SPSA 2019, Austin, Texas"
+    },
+    {
+      lat: 29.9511, lon: -90.0715,
+      type: "conf",
+      label: "SPSA 2018, New Orleans, Louisiana"
+    },
+    {
+      lat: 58.3780, lon: 26.7290,
+      type: "conf",
+      label: "Tartu Conference on Russian and East European Studies 2018, Tartu, Estonia"
+    }
+  ];
+
+  const allPoints = [...positions, ...conferences];
+
+  /* ============================
+     POINT STYLING (FIXED)
+     ============================ */
+  globe
+    .pointsData(allPoints)
+    .pointLat(d => d.lat)
+    .pointLng(d => d.lon)
+
+    .pointAltitude(d => 0.03
+    )
+
+  .pointRadius(d =>
+  0.32   // ✅ same for both types
+)
+
+
+    .pointColor(d =>
+      d.type === "position" ? '#f2c94c' : '#c43d3d'
+    )
+
+    .pointResolution(8)
+    .pointLabel(d => d.label)
+    .onPointClick(d => showPopup(d.label));
+
+  /* ============================
+     RINGS (work emphasis)
+     ============================ */
+  globe
+    .ringsData(positions)
+    .ringColor(() => '#f2c94c')
+    .ringMaxRadius(3)
+    .ringPropagationSpeed(1)
+    .ringRepeatPeriod(900);
+
+  /* ============================
+     POPUP
+     ============================ */
+  function showPopup(content) {
+    const popup = document.createElement('div');
+    popup.innerHTML = content;
+
+    popup.style.position = 'fixed';
+    popup.style.top = '50%';
+    popup.style.left = '50%';
+    popup.style.transform = 'translate(-50%, -50%)';
+    popup.style.background = '#fff';
+    popup.style.padding = '1rem 1.4rem';
+    popup.style.borderRadius = '10px';
+    popup.style.boxShadow = '0 10px 30px rgba(0,0,0,0.15)';
+    popup.style.fontSize = '0.95rem';
+    popup.style.zIndex = '999';
+
+    popup.onclick = () => popup.remove();
+    document.body.appendChild(popup);
+  }
+
+});
+</script>
+
+```
+
