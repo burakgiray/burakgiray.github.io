@@ -142,24 +142,44 @@ ul.task-list li input[type="checkbox"] {
 <style>
 
 /* =========================================================
-   GLOBAL LAYOUT
+   GLOBAL LAYOUT (SAFE)
    ========================================================= */
 
+/* ✅ restore navbar spacing */
 body {
-  padding: 0;
-
+  margin: 0;
+  padding-top: 70px;   /* prevents navbar crush */
   font-family: -apple-system, BlinkMacSystemFont,
                "Segoe UI", Roboto, sans-serif;
-
   color: #1f1f1f;
   background: #ffffff;
 }
 
-/* Main content width */
+/* ✅ content width */
 #quarto-content main {
   max-width: 1040px;
   margin: auto;
   padding: 0 1.8rem;
+}
+
+/* =========================================================
+   ✅ NAVBAR PROTECTION (CRITICAL FIX)
+   ========================================================= */
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+/* ✅ prevent your styles from breaking navbar */
+.navbar h1,
+.navbar h2,
+.navbar h3,
+.navbar h4,
+.navbar h5,
+.navbar p {
+  all: unset;
 }
 
 /* =========================================================
@@ -170,7 +190,6 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr 240px;
   gap: 2.3rem;
-
   align-items: center;
 
   margin-top: 3.8rem;
@@ -198,17 +217,11 @@ body {
    PHOTO
    ========================================================= */
 
-.hero-photo {
-  perspective: 1000px;
-}
-
 .hero-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
-
   object-fit: cover;
   display: block;
-
   border-radius: 12px;
 
   box-shadow: 0 8px 22px rgba(0,0,0,0.10);
@@ -219,7 +232,6 @@ body {
     filter 0.35s ease;
 }
 
-/* Hover lift + zoom */
 .hero-photo img:hover {
   transform:
     scale(1.04)
@@ -232,7 +244,6 @@ body {
   animation: subtleShake 0.6s ease-in-out;
 }
 
-/* Shake animation */
 @keyframes subtleShake {
   0%   { transform: scale(1.04) translateY(-4px) rotateZ(-0.4deg); }
   25%  { transform: scale(1.04) translateY(-4px) rotateZ(0.4deg); }
@@ -254,29 +265,22 @@ body {
   font-size: 4rem;
   font-weight: 700;
   line-height: 0.98;
-
   color: #12284a;
-
   margin-bottom: 0.9rem;
-
   font-family: Georgia, serif;
 }
 
 .role {
   font-size: 1.08rem;
   color: #4b5a70;
-
   margin-bottom: 1.7rem;
-
   font-weight: 500;
 }
 
 .tagline {
   font-size: 1.08rem;
   line-height: 1.95;
-
   color: #2b2b2b;
-
   max-width: 680px;
 }
 
@@ -293,9 +297,7 @@ body {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 700;
-
   color: #294c7a;
-
   margin-bottom: 1.4rem;
 }
 
@@ -315,13 +317,10 @@ body {
   align-items: center;
 
   padding-bottom: 0.75rem;
-
   border-bottom: 1px solid #ccd4df;
 
   text-decoration: none;
-
   color: #183b63;
-
   font-size: 1rem;
 
   transition: opacity 0.15s ease;
@@ -332,92 +331,65 @@ body {
 }
 
 /* =========================================================
-   SECTION HEADINGS
+   ✅ SCOPED TYPOGRAPHY (FIX)
    ========================================================= */
 
-h2 {
+main h2 {
   font-size: 1.6rem;
   font-weight: 700;
-
   color: #17335c;
-
   margin-top: 3rem;
   margin-bottom: 1rem;
-
   font-family: Georgia, serif;
 }
 
-/* =========================================================
-   PARAGRAPHS
-   ========================================================= */
-
-p {
+main p {
   font-size: 1rem;
   line-height: 1.85;
-
   margin-bottom: 1rem;
-
-  max-width: 100%;
 }
 
 /* =========================================================
-   RESEARCH AREAS
+   DETAILS
    ========================================================= */
 
-details {
+main details {
   margin-bottom: 0.9rem;
-
   border: 1px solid #e4e7ec;
   border-radius: 8px;
-
   background: #fafbfc;
-
   padding: 0.8rem 1rem;
-
-  max-width: 100%;
 }
 
-summary {
+main summary {
   cursor: pointer;
-
   font-weight: 600;
   color: #1f2f46;
 }
 
-details p {
-  margin-top: 0.8rem;
-  margin-bottom: 0.2rem;
-}
-
 /* =========================================================
-   EDUCATION TABLE
+   TABLE
    ========================================================= */
 
-table {
+main table {
   width: 100%;
-  max-width: 100%;
-
   font-size: 1rem;
   margin-top: 0.8rem;
 }
 
-th {
+main th {
   text-align: left;
   font-weight: 600;
-
   border-bottom: 1px solid #d9dee7;
 }
 
-td {
+main td {
   padding: 0.7rem 0.5rem;
-  vertical-align: top;
-
   border-bottom: 1px solid #f0f1f3;
 }
 
-td:first-child {
+main td:first-child {
   width: 90px;
-
   color: #666;
   font-weight: 500;
 }
@@ -440,7 +412,6 @@ td:first-child {
   .hero-main {
     border-right: none;
     border-bottom: 1px solid #d9dee7;
-
     padding-right: 0;
     padding-bottom: 1.5rem;
   }
@@ -456,7 +427,6 @@ td:first-child {
   .name {
     font-size: 2.8rem;
   }
-
 }
 
 </style>
