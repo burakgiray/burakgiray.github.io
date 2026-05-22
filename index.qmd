@@ -17,11 +17,7 @@ format:
 /* ✅ restore navbar spacing */
 body {
   margin: 0;
-  padding-top: 70px;   /* prevents navbar crush */
-  font-family: -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, sans-serif;
-  color: #1f1f1f;
-  background: #ffffff;
+  padding-top: 80px;   /* slightly larger = safer */
 }
 
 /* ✅ content width */
@@ -35,11 +31,13 @@ body {
    ✅ NAVBAR PROTECTION (CRITICAL FIX)
    ========================================================= */
 
+/* ✅ DO NOT override Bootstrap layout */
 .navbar {
   min-height: 70px;
-  display: flex;
-  align-items: center;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
+
 
 /* ✅ prevent your styles from breaking navbar */
 .navbar h1,
