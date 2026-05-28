@@ -1,4 +1,7 @@
-/* Navbar icon color */
+/* =========================================================
+   NAVBAR ICONS
+========================================================= */
+
 .navbar .nav-link i,
 .navbar .bi {
   color: #ffffff !important;
@@ -24,52 +27,80 @@
   vertical-align: middle;
 }
 
-.summary-btn {
-  font-size: 0.7em;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #2c3e50;
-  border-bottom: 2px solid #2c3e50;
-  text-decoration: none;
-  padding-bottom: 0.05em;
+
+/* =========================================================
+   PUBLICATION SPACING
+========================================================= */
+
+/* Remove extra spacing below publication text */
+.publication p,
+.pub-list-item p,
+.pub-entry p {
+  margin-bottom: 0.12rem !important;
 }
 
-.summary-btn:hover {
-  color: #1f4e79;
-  border-bottom-color: #1f4e79;
-  text-decoration: none;
+/* DOI container */
+.doi-block {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1;
 }
 
-.pub-extras {
+/* DOI / badge / summary row */
+.doi-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
+  margin-top: 0 !important;
+}
+
+/* DOI icon */
+.doi-icon {
   display: inline-flex;
   align-items: center;
-  gap: 0.75em;         /* space between badge and Summary */
-  margin-top: 0.05em; /* VERY tight spacing below DOI */
+  line-height: 1;
 }
 
+/* Compact Dimensions badge */
+.__dimensions_badge_embed__ {
+  display: inline-flex !important;
+  align-items: center !important;
+
+  width: 95px !important;
+  max-width: 95px !important;
+
+  overflow: hidden !important;
+  vertical-align: middle;
+}
+
+/* Keep badge internals inline */
+.__dimensions_badge_embed__ * {
+  white-space: nowrap !important;
+}
+
+/* Summary button */
 .summary-btn {
+  display: inline-flex;
+  align-items: center;
+
   font-size: 0.75em;
   font-weight: 500;
+  line-height: 1;
+
   color: #2c3e50;
   text-decoration: none;
+
   border-bottom: 1px solid #2c3e50;
-  padding-bottom: 0.05em;
-  line-height: 1.2;
-  text-transform: none;
+  padding-bottom: 0;
 }
 
-/* Upright arrow */
+/* External-link arrow */
 .summary-btn::after {
   content: " ↗";
   font-size: 0.85em;
+  margin-left: 0.08rem;
 }
-
-.summary-btn:hover {
-  color: #1f4e79;
-  border-bottom-color: #1f4e79;
-}
-
-
-
-
