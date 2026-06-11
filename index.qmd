@@ -55,7 +55,7 @@ body {
 
 .hero-card {
   display: grid;
-  grid-template-columns: 250px 1fr 240px;
+  grid-template-columns: 300px 1fr 220px;
   gap: 2.3rem;
   align-items: center;
 
@@ -89,9 +89,9 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-  border-radius: 12px;
+  border-radius: 14px;
 
-  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 
   transition:
     transform 0.35s ease,
@@ -101,12 +101,12 @@ body {
 
 .hero-photo img:hover {
   transform:
-    scale(1.04)
+    scale(1.08)
     translateY(-4px)
     rotateZ(-0.4deg);
 
-  box-shadow: 0 18px 38px rgba(0,0,0,0.18);
-  filter: brightness(1.02);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+  filter: brightness(1.03);
 
   animation: subtleShake 0.6s ease-in-out;
 }
@@ -301,7 +301,7 @@ main td:first-child {
 
 ::::::::::: hero-card
 ::: hero-photo
-![](profile.jpg)
+![Photo: Sebastian Kissel](profile.jpg){width="3843"}
 :::
 
 :::::: hero-main
