@@ -74,12 +74,6 @@ a:hover {
      <i class="ai ai-doi"></i>
   </a>
 
-  <span
-    class="__dimensions_badge_embed__"
-    data-doi="10.1177/10659129231190614"
-    data-style="small_rectangle"
-    data-hide-zero-citations="false">
-  </span>
 
   <a href="/research/election-accomplished/"
      class="summary-btn">
@@ -94,7 +88,7 @@ a:hover {
 
 ::: publication
 **Giray, Burak.** (2023). [Do UN Missions Have an Expiration Date? Ideational Commitment to the UN and the Duration of Missions.]{.pub-title} [International Peacekeeping, 31(1), 1–28.]{.pub-journal}
-
+ 
 <div class="doi-row">
 
   <a href="https://doi.org/10.1080/13533312.2023.2246362"
@@ -102,13 +96,6 @@ a:hover {
      target="_blank">
      <i class="ai ai-doi"></i>
   </a>
-
-  <span
-    class="__dimensions_badge_embed__"
-    data-doi="10.1080/13533312.2023.2246362"
-    data-style="small_rectangle"
-    data-hide-zero-citations="false">
-  </span>
 
   <a href="/research/expiration-date/"
      class="summary-btn">
@@ -129,12 +116,6 @@ a:hover {
      <i class="ai ai-doi"></i>
   </a>
 
-  <span
-    class="__dimensions_badge_embed__"
-    data-doi="10.1080/03050629.2023.2184813"
-    data-style="small_rectangle"
-    data-hide-zero-citations="false">
-  </span>
 
   <a href="/research/ideational-commitment/"
      class="summary-btn">
@@ -156,12 +137,6 @@ a:hover {
      <i class="ai ai-doi"></i>
   </a>
 
-  <span
-    class="__dimensions_badge_embed__"
-    data-doi="10.1515/peps-2022-0028"
-    data-style="small_rectangle"
-    data-hide-zero-citations="false">
-  </span>
 
   <a href="/research/public-support/"
      class="summary-btn">

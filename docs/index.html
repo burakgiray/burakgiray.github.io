@@ -598,17 +598,39 @@ window.addEventListener('load', () => {
       label: "Uppsala University<br>DAAD Visiting Researcher (2023–2024)"
     },
 {
-  lat: 29.7604, lon: -95.3698, type: "position",
-  label: `University of Houston<br>
-  PhD Student & Graduate Assistant (2016–2022)<br>
-`
+  lat: 29.7604,
+  lon: -95.3698,
+  type: "position",
+  label: `
+    <div style="text-align:center; max-width:420px;">
+      <strong>University of Houston</strong><br>
+      PhD Student & Graduate Assistant (2016–2022)<br><br>
+
+      <img
+        src="houston.jpg"
+        alt="My photo"
+        style="
+          width:320px;
+          height:320px;
+          object-fit:cover;
+          border-radius:50%;
+          border:2px solid #ccc;
+        "
+      >
+    </div>
+  `
 }
   ];
 
-  /* ============================
+  /* ============================ 
      CONFERENCES (RED)
      ============================ */
   const conferences = [
+    {
+      lat: 52.200, lon: 12.3050,
+      type: "conf",
+      label: "Jan Tinbergen European Peace Science Conference 2026, Berlin, Germany"
+    },
     {
       lat: 49.0134, lon: 12.1016,
       type: "conf",
