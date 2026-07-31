@@ -119,7 +119,7 @@ a:hover {
 
 ::: publication
 [Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics.]{.pub-title} Forthcoming
-:::
+::: 
 
 ::: publication
 [Online Communication and Peacekeeping: New Evidence on Operational Activities and Effectiveness.]{.pub-title} Under review
