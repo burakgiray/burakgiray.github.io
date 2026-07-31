@@ -189,9 +189,7 @@ body {
   grid-template-columns: 300px 1fr 220px;
   gap: 2.3rem;
   align-items: center;
-
-  margin-top: 3.8rem;
-  margin-bottom: 3.2rem;
+  width: 100%;
 
   padding: 2.2rem;
 
@@ -427,7 +425,186 @@ main td:first-child {
   }
 }
 
+/* =========================================================
+   HERO SLIDER (NEW — wraps business card + news slides)
+   ========================================================= */
+
+.hero-slider {
+  position: relative;
+  margin-top: 3.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-slider-track {
+  overflow: hidden;
+}
+
+.hero-slider-slides {
+  display: flex;
+  align-items: stretch;
+  transition: transform 0.45s ease;
+}
+
+.hero-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+}
+
+/* news slides reuse the same card shell as the business card,
+   just with a simpler single-column layout */
+.news-card {
+  padding: 2.2rem;
+  width: 100%;
+
+  background:
+    linear-gradient(
+      115deg,
+      #fbfbfa 0%,
+      #f7f8fa 56%,
+      #eef2f7 56%,
+      #f4f6f9 100%
+    );
+
+  border: 1px solid #d7dde7;
+  border-radius: 18px;
+
+  box-shadow:
+    0 14px 34px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #294c7a;
+  margin-bottom: 1rem;
+}
+
+.news-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #12284a;
+  margin-bottom: 0.9rem;
+  font-family: Georgia, serif;
+  line-height: 1.15;
+}
+
+.news-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2b2b2b;
+  max-width: 720px;
+}
+
+.news-meta {
+  margin-top: 1.2rem;
+  font-size: 0.92rem;
+  color: #4b5a70;
+}
+
+.news-meta a {
+  color: #183b63;
+  text-decoration: none;
+  border-bottom: 1px solid #ccd4df;
+}
+
+.news-meta a:hover {
+  opacity: 0.7;
+}
+
+/* arrows */
+.hero-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 1px solid #d7dde7;
+  border-radius: 50%;
+
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+
+  cursor: pointer;
+  color: #17335c;
+  font-size: 1.1rem;
+  user-select: none;
+
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 5;
+}
+
+.hero-slider-arrow:hover {
+  opacity: 0.75;
+}
+
+.hero-slider-arrow.prev {
+  left: -22px;
+}
+
+.hero-slider-arrow.next {
+  right: -22px;
+}
+
+/* dots */
+.hero-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+}
+
+.hero-slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d7dde7;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.hero-slider-dot.active {
+  background: #294c7a;
+}
+
+@media (max-width: 980px) {
+  .hero-slider-arrow.prev {
+    left: 4px;
+  }
+  .hero-slider-arrow.next {
+    right: 4px;
+  }
+  .news-card {
+    padding: 1.6rem;
+  }
+  .news-title {
+    font-size: 1.5rem;
+  }
+}
+
 </style>
+<div class="hero-slider">
+<div class="hero-slider-arrow prev" onclick="heroSliderMove(-1)">
+<p>❮</p>
+</div>
+<div class="hero-slider-arrow next" onclick="heroSliderMove(1)">
+<p>❯</p>
+</div>
+<div class="hero-slider-track">
+<div class="hero-slider-slides">
+<div class="hero-slide">
 <div class="hero-card">
 <div class="hero-photo">
 <div class="quarto-figure quarto-figure-center">
@@ -459,6 +636,81 @@ main td:first-child {
 </div>
 </div>
 </div>
+</div>
+<div class="hero-slide">
+<div class="news-card">
+<div class="news-eyebrow">
+<p>Forthcoming Paper</p>
+</div>
+<div class="news-title">
+<p>Winning Peace Indirectly: How UN Peacekeepers’ Security Activities Shape Local Support and Conflict Dynamics</p>
+</div>
+<div class="news-body">
+<p>My paper examining the direct and indirect effects of UN peacekeepers’ security activities on local support and conflict dynamics has been accepted for publication in <em>Global Studies Quarterly</em>.</p>
+</div>
+<div class="news-meta">
+<p><a href="https://doi.org/10.1093/isagsq/ksag120" target="_blank">Read the paper ↗</a> · Forthcoming in <em>Global Studies Quarterly</em> · Accepted July 2026</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hero-slider-dots">
+<div class="hero-slider-dot active" onclick="heroSliderGoTo(0)">
+
+</div>
+<div class="hero-slider-dot" onclick="heroSliderGoTo(1)">
+
+</div>
+</div>
+</div>
+<script>
+window.heroSliderIndex = 0;
+window.heroSliderTotal = 2;
+window.heroSliderAutoplayMs = 6000;
+window.heroSliderTimer = null;
+
+function heroSliderRender() {
+  const track = document.querySelector('.hero-slider-slides');
+  if (!track) return;
+  track.style.transform = `translateX(-${window.heroSliderIndex * 100}%)`;
+
+  document.querySelectorAll('.hero-slider-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === window.heroSliderIndex);
+  });
+}
+
+function heroSliderStartAutoplay() {
+  clearInterval(window.heroSliderTimer);
+  window.heroSliderTimer = setInterval(() => {
+    heroSliderMove(1, false);
+  }, window.heroSliderAutoplayMs);
+}
+
+function heroSliderMove(delta, manual = true) {
+  window.heroSliderIndex =
+    (window.heroSliderIndex + delta + window.heroSliderTotal) % window.heroSliderTotal;
+  heroSliderRender();
+  if (manual) heroSliderStartAutoplay(); // reset timer on manual interaction
+}
+
+function heroSliderGoTo(i) {
+  window.heroSliderIndex = i;
+  heroSliderRender();
+  heroSliderStartAutoplay();
+}
+
+window.addEventListener('load', () => {
+  heroSliderRender();
+  heroSliderStartAutoplay();
+
+  const slider = document.querySelector('.hero-slider');
+  if (slider) {
+    slider.addEventListener('mouseenter', () => clearInterval(window.heroSliderTimer));
+    slider.addEventListener('mouseleave', () => heroSliderStartAutoplay());
+  }
+});
+</script>
 <section id="about" class="level2">
 <h2 class="anchored" data-anchor-id="about">About</h2>
 <p>Hi! I am a Postdoctoral Researcher at the Munich School of Politics and Public Policy (Hochschule für Politik) at the Technical University of Munich.</p>
@@ -763,6 +1015,28 @@ window.addEventListener('load', () => {
 
 });
 </script>
+<style>
+.site-footer {
+  max-width: 1040px;
+  margin: 3rem auto 2rem auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid #e4e7ec;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #8a8f98;
+}
+.site-footer a {
+  color: #17335c;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  opacity: 0.7;
+}
+</style>
+
+<div class="site-footer">
+  © 2026 Burak Giray · Last updated July 2026 · Built with Quarto
+</div>
 
 
 </section>

@@ -8,7 +8,6 @@ format:
     css: styles.css
 ---
 
-
 ```{=html}
 <style>
 h2 {
@@ -62,96 +61,64 @@ a:hover {
 
 ## Peer-Reviewed Articles
 
+:::: publication
+**Giray, Burak**, and J. Tyson Chatagnier. (2024). [Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns.]{.pub-title} [Political Research Quarterly, 77(1), 3–16.]{.pub-journal}
 
-::: publication
-**Giray, Burak**, and J. Tyson Chatagnier. (2024). [Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns.]{.pub-title} [Political Research Quarterly, 77(1), 3–16.]{.pub-journal} 
-
-<div class="doi-row">
-
-  <a href="https://doi.org/10.1177/10659129231190614"
+::: doi-row
+<a href="https://doi.org/10.1177/10659129231190614"
      class="doi-icon"
-     target="_blank">
-     <i class="ai ai-doi"></i>
-  </a>
+     target="_blank"> <i class="ai ai-doi"></i> </a>
 
-
-  <a href="/research/election-accomplished/"
-     class="summary-btn">
-     Summary
-  </a>
-
-</div>
-
-
-
+<a href="/research/election-accomplished/"
+     class="summary-btn"> Summary </a>
 :::
+::::
 
-::: publication
+:::: publication
 **Giray, Burak.** (2023). [Do UN Missions Have an Expiration Date? Ideational Commitment to the UN and the Duration of Missions.]{.pub-title} [International Peacekeeping, 31(1), 1–28.]{.pub-journal}
- 
-<div class="doi-row">
 
-  <a href="https://doi.org/10.1080/13533312.2023.2246362"
+::: doi-row
+<a href="https://doi.org/10.1080/13533312.2023.2246362"
      class="doi-icon"
-     target="_blank">
-     <i class="ai ai-doi"></i>
-  </a>
+     target="_blank"> <i class="ai ai-doi"></i> </a>
 
-  <a href="/research/expiration-date/"
-     class="summary-btn">
-     Summary
-  </a>
-
-</div>
+<a href="/research/expiration-date/"
+     class="summary-btn"> Summary </a>
 :::
+::::
 
-::: publication
+:::: publication
 **Giray, Burak.** (2023). [Troop Providers’ Ideational Commitment to UN Peacekeeping and Effectiveness.]{.pub-title} [International Interactions, 49(3), 372–400.]{.pub-journal}
 
-<div class="doi-row">
-
-  <a href="https://doi.org/10.1080/03050629.2023.2184813"
+::: doi-row
+<a href="https://doi.org/10.1080/03050629.2023.2184813"
      class="doi-icon"
-     target="_blank">
-     <i class="ai ai-doi"></i>
-  </a>
+     target="_blank"> <i class="ai ai-doi"></i> </a>
 
-
-  <a href="/research/ideational-commitment/"
-     class="summary-btn">
-     Summary
-  </a>
-
-</div>
+<a href="/research/ideational-commitment/"
+     class="summary-btn"> Summary </a>
 :::
+::::
 
-
-::: publication
+:::: publication
 **Giray, Burak.** (2022). [Public Support for UN Missions and Attacks on Peacekeepers: Evidence from the Democratic Republic of the Congo.]{.pub-title} [Peace Economics, Peace Science and Public Policy, 28(4), 305–332.]{.pub-journal}
 
-<div class="doi-row">
-
-  <a href="https://doi.org/10.1515/peps-2022-0028"
+::: doi-row
+<a href="https://doi.org/10.1515/peps-2022-0028"
      class="doi-icon"
-     target="_blank">
-     <i class="ai ai-doi"></i>
-  </a>
+     target="_blank"> <i class="ai ai-doi"></i> </a>
 
-
-  <a href="/research/public-support/"
-     class="summary-btn">
-     Summary
-  </a>
-
-</div>
+<a href="/research/public-support/"
+     class="summary-btn"> Summary </a>
 :::
+::::
 
 ------------------------------------------------------------------------
 
 ## Manuscripts Under Review
 
 ::: publication
-[Winning Peace Indirectly: UN Peacekeepers’ Security Activities as a Driver of Local Support.]{.pub-title} Revise and resubmit
+[Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics.]{.pub-title} Forthcoming
 :::
 
 ::: publication
