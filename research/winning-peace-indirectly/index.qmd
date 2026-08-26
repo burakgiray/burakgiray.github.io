@@ -1,0 +1,29 @@
+---
+title: "Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics"
+toc: false
+---
+
+------------------------------------------------------------------------
+
+UN peacekeepers are deployed to protect civilians and stabilize conflict-affected communities, but their effectiveness depends heavily on local cooperation. What explains variation in the violence peacekeepers help prevent? Does simply increasing security activities reduce violence, or does something else drive this relationship?
+
+Using a novel dataset of daily peacekeeping activities drawn from the official social media accounts of nine UN missions between 2010 and 2022, this study finds that security activities reduce violence primarily indirectly rather than directly. By carrying out security activities, peacekeepers create space to engage in non-security activities that build trust and cooperation with local communities, and it is this trust-building that drives down violence. Timing also matters: security activities conducted proactively, rather than reactively, are directly associated with lower violence.
+
+This study suggests to the UN that peacekeeping should be treated as a multidimensional endeavor, in which security and non-security activities work together, rather than as a purely coercive or deterrence-based function.
+
+------------------------------------------------------------------------
+
+# BibTeX
+
+``` bibtex
+@article{giray2026winning,
+  title={Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics},
+  author={Giray, Burak},
+  journal={Global Studies Quarterly},
+  volume={6},
+  number={3},
+  pages={ksag120},
+  year={2026},
+  publisher={Oxford University Press}
+}
+```

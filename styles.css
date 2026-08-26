@@ -104,3 +104,23 @@
   font-size: 0.85em;
   margin-left: 0.08rem;
 }
+
+/* New publication badge — oval */
+.new-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #1d5a99;
+  border-radius: 50px;
+  vertical-align: middle;
+  animation: flash 1.2s infinite;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}

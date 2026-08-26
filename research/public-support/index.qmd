@@ -3,15 +3,7 @@ title: "Public Support for UN Missions and Attacks on Peacekeepers: Evidence fro
 toc: false
 ---
 
-::: {style="text-align:center; margin: 1.5em 0;"}
-<img src="pko4.png" alt="UN peacekeepers illustration" style="max-width:85%; height:auto; border-radius:8px; margin-bottom:-56px;"/>
-
-<p style="font-size: 0.9em; color: gray; margin-top:0;">
-
-<em>Illustration created with AI assistance.</em>
-
-</p>
-:::
+------------------------------------------------------------------------
 
 UN peacekeepers are often targeted by rebel groups. The violence they experience hinders the functionality of peacekeeping operations, constituting a major problem for the UN. What conditions make these attacks more likely? How does the local support for UN peacekeeping operations affect the violence against peacekeepers?
 

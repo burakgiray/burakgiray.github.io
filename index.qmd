@@ -7,7 +7,6 @@ format:
     page-layout: full
 ---
 
-
 ```{=html}
 <style>
 
@@ -329,12 +328,15 @@ main td:first-child {
 
   background:
     linear-gradient(
-      115deg,
-      #fbfbfa 0%,
-      #f7f8fa 56%,
-      #eef2f7 56%,
-      #f4f6f9 100%
-    );
+      90deg,
+      rgba(251,251,250,0.97) 0%,
+      rgba(247,248,250,0.92) 38%,
+      rgba(238,242,247,0.55) 68%,
+      rgba(244,246,249,0.3) 100%
+    ),
+    url('images/designer.png');
+  background-size: cover;
+  background-position: left center;
 
   border: 1px solid #d7dde7;
   border-radius: 18px;
@@ -467,7 +469,7 @@ main td:first-child {
 </style>
 ```
 
-::: hero-slider
+:::::::::::::::::::::::::: hero-slider
 ::: {.hero-slider-arrow .prev onclick="heroSliderMove(-1)"}
 ❮
 :::
@@ -476,10 +478,9 @@ main td:first-child {
 ❯
 :::
 
-::: hero-slider-track
-::: hero-slider-slides
-
-::: hero-slide
+:::::::::::::::::::: hero-slider-track
+::::::::::::::::::: hero-slider-slides
+:::::::::::: hero-slide
 ::::::::::: hero-card
 ::: hero-photo
 ![Photo: Sebastian Kissel](profile.jpg){width="3843"}
@@ -513,12 +514,12 @@ Connect with Me
 :::
 :::::
 :::::::::::
-:::
+::::::::::::
 
-::: hero-slide
-::: news-card
+:::::::: hero-slide
+::::::: news-card
 ::: news-eyebrow
-Forthcoming Paper
+New Publication
 :::
 
 ::: news-title
@@ -526,26 +527,26 @@ Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local S
 :::
 
 ::: news-body
-My paper examining the direct and indirect effects of UN peacekeepers' security activities on local support and conflict dynamics has been accepted for publication in *Global Studies Quarterly*.
+My paper examining the direct and indirect effects of UN peacekeepers' security activities on local support and conflict dynamics is now published open access in *Global Studies Quarterly*.
 :::
 
 ::: news-meta
-[Read the paper ↗](https://doi.org/10.1093/isagsq/ksag120){target="_blank"} · Forthcoming in *Global Studies Quarterly* · Accepted July 2026
-:::
-:::
-:::
-
+[Read the paper ↗](https://doi.org/10.1093/isagsq/ksag120){target="_blank"} · *Global Studies Quarterly*, Vol. 6, Issue 3 · Published 25 August 2026
 
 :::
-:::
+:::::::
+::::::::
+:::::::::::::::::::
+::::::::::::::::::::
 
-::: hero-slider-dots
+::::: hero-slider-dots
 ::: {.hero-slider-dot .active onclick="heroSliderGoTo(0)"}
 :::
+
 ::: {.hero-slider-dot onclick="heroSliderGoTo(1)"}
 :::
-:::
-:::
+:::::
+::::::::::::::::::::::::::
 
 ```{=html}
 <script>
@@ -596,9 +597,6 @@ window.addEventListener('load', () => {
 });
 </script>
 ```
-
-
-
 
 ## About
 
