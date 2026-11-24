@@ -62,6 +62,19 @@ a:hover {
 ## Peer-Reviewed Articles
 
 :::: publication
+**Giray, Burak.** (2026). [The COVID-19 Pandemic and the Adaptation of Peacekeeping Activities: An Analysis of Official MONUSCO Tweets.]{.pub-title} [Medicine, Conflict and Survival, 1–19.]{.pub-journal}
+
+::: doi-row
+<a href="https://doi.org/10.1080/13623699.2026.2764019"
+     class="doi-icon"
+     target="_blank"> <i class="ai ai-doi"></i> </a>
+<a href="/research/covid-monusco/"
+     class="summary-btn"> Summary </a>
+<span class="new-badge">New</span>
+:::
+::::
+
+:::: publication
 **Giray, Burak.** (2026). [Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics.]{.pub-title} [Global Studies Quarterly, 6(3), ksag120.]{.pub-journal}
 
 ::: doi-row

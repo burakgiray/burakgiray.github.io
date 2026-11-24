@@ -1,0 +1,32 @@
+---
+title: "The COVID-19 Pandemic and the Adaptation of Peacekeeping Activities: An Analysis of Official MONUSCO Tweets"
+toc: false
+lang: en
+include-in-header:
+  text: |
+    <style>main p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;}</style>
+---
+
+------------------------------------------------------------------------
+
+When COVID-19 reached the Democratic Republic of the Congo in 2020, the UN's stabilization mission had to keep operating in one of its most volatile theatres while restrictions limited movement, gatherings, and direct contact with communities. How did a large, multidimensional mission respond to a public health emergency layered on top of an active conflict? Which parts of its work were scaled back, which continued, and what new tasks did it take on?
+
+To answer these questions, the article treats MONUSCO's official Twitter/X account as a running record of what the mission reported doing in the field. Systematically coding these posts makes it possible to follow the mission's activity profile before and during the pandemic, and to see how its priorities shifted as the crisis unfolded.
+
+The case offers a broader lesson for the UN: health emergencies are not separate from conflict management, and missions need the flexibility to rebalance their activities when the operating environment changes suddenly.
+
+------------------------------------------------------------------------
+
+# BibTeX
+
+``` bibtex
+@article{giray2026covid,
+  title={The {COVID-19} Pandemic and the Adaptation of Peacekeeping Activities: An Analysis of Official {MONUSCO} Tweets},
+  author={Giray, Burak},
+  journal={Medicine, Conflict and Survival},
+  pages={1--19},
+  year={2026},
+  publisher={Taylor \& Francis},
+  doi={10.1080/13623699.2026.2764019}
+}
+```

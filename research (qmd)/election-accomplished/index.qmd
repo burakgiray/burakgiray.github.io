@@ -1,6 +1,10 @@
 ---
 title: "Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns"
 toc: false
+lang: en
+include-in-header:
+  text: |
+    <style>main p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;}</style>
 ---
 
 ::: {style="text-align:center; margin: 1.5em 0;"}

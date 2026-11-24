@@ -1,6 +1,10 @@
 ---
 title: "Public Support for UN Missions and Attacks on Peacekeepers: Evidence from the Democratic Republic of the Congo"
 toc: false
+lang: en
+include-in-header:
+  text: |
+    <style>main p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;}</style>
 ---
 
 ::: {style="text-align:center; margin: 1.5em 0;"}

@@ -1,6 +1,10 @@
 ---
 title: "Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics"
 toc: false
+lang: en
+include-in-header:
+  text: |
+    <style>main p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;}</style>
 ---
 
 ------------------------------------------------------------------------
