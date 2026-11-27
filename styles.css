@@ -124,3 +124,6 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
 }
+
+/* page titles (Publications, Teaching, CV) */
+main h1.title { font-family: Georgia, serif; font-weight: 700; color: #12284a; font-size: 2.4rem; }
