@@ -5,6 +5,9 @@ format:
     theme: flatly
     toc: false
     page-layout: full
+resources:
+  - images/covid-cover.png
+  - images/gsq-cover.png
 ---
 
 ```{=html}
@@ -451,6 +454,40 @@ main td:first-child {
   background: #294c7a;
 }
 
+/* cover-image slides: same frame as the business card */
+.cover-slide {
+  aspect-ratio: 1200 / 630;
+}
+.cover-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d7dde7;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.cover-link:hover {
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+.cover-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-slide .hero-card {
+  height: 100%;
+}
+@media (max-width: 980px) {
+  .hero-slider-slides { align-items: flex-start; }
+  .hero-slider-track { transition: height 0.45s ease; }
+  .cover-slide { aspect-ratio: auto; }
+  .cover-link img { height: auto; }
+}
+
+
 @media (max-width: 980px) {
   .hero-slider-arrow.prev {
     left: 4px;
@@ -516,47 +553,19 @@ Connect with Me
 :::::::::::
 ::::::::::::
 
-:::::::: hero-slide
-::::::: news-card
-::: news-eyebrow
-New Publication
-:::
+```{=html}
+<div class="hero-slide cover-slide">
+<a class="cover-link" href="https://doi.org/10.1080/13623699.2026.2764019" target="_blank" rel="noopener" aria-label="Read the article: The COVID-19 Pandemic and the Adaptation of Peacekeeping Activities (Medicine, Conflict and Survival)">
+<img src="images/covid-cover.png" alt="Read the article: The COVID-19 Pandemic and the Adaptation of Peacekeeping Activities (Medicine, Conflict and Survival)">
+</a>
+</div>
+<div class="hero-slide cover-slide">
+<a class="cover-link" href="https://doi.org/10.1093/isagsq/ksag120" target="_blank" rel="noopener" aria-label="Read the article: Winning Peace Indirectly (Global Studies Quarterly)">
+<img src="images/gsq-cover.png" alt="Read the article: Winning Peace Indirectly (Global Studies Quarterly)">
+</a>
+</div>
+```
 
-::: news-title
-The COVID-19 Pandemic and the Adaptation of Peacekeeping Activities: An Analysis of Official MONUSCO Tweets
-:::
-
-::: news-body
-Using the mission's own social media posts as a record of its field activities, this article shows how a global health crisis reshaped what peacekeepers did on the ground in the DR Congo. Now available open access.
-:::
-
-::: news-meta
-[Read the paper ↗](https://doi.org/10.1080/13623699.2026.2764019){target="_blank"} · *Medicine, Conflict and Survival* · Published 24 November 2026
-
-:::
-:::::::
-::::::::
-
-:::::::: hero-slide
-::::::: news-card
-::: news-eyebrow
-New Publication
-:::
-
-::: news-title
-Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics
-:::
-
-::: news-body
-My paper examining the direct and indirect effects of UN peacekeepers' security activities on local support and conflict dynamics is now published open access in *Global Studies Quarterly*.
-:::
-
-::: news-meta
-[Read the paper ↗](https://doi.org/10.1093/isagsq/ksag120){target="_blank"} · *Global Studies Quarterly*, Vol. 6, Issue 3 · Published 25 August 2026
-
-:::
-:::::::
-::::::::
 :::::::::::::::::::
 ::::::::::::::::::::
 
@@ -584,6 +593,13 @@ function heroSliderRender() {
   if (!track) return;
   track.style.transform = `translateX(-${window.heroSliderIndex * 100}%)`;
 
+  // on small screens, size the frame to the visible slide
+  const frame = document.querySelector('.hero-slider-track');
+  const active = track.children[window.heroSliderIndex];
+  if (frame && active) {
+    frame.style.height = window.innerWidth <= 980 ? active.offsetHeight + 'px' : '';
+  }
+
   document.querySelectorAll('.hero-slider-dot').forEach((dot, i) => {
     dot.classList.toggle('active', i === window.heroSliderIndex);
   });
@@ -608,6 +624,8 @@ function heroSliderGoTo(i) {
   heroSliderRender();
   heroSliderStartAutoplay();
 }
+
+window.addEventListener('resize', heroSliderRender);
 
 window.addEventListener('load', () => {
   heroSliderRender();
