@@ -582,6 +582,64 @@ main td:first-child {
   background: #294c7a;
 }
 
+/* intro slide: editorial split */
+.intro-slide { aspect-ratio: 1200 / 630; }
+.intro-card {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #f7f8fa, #e9eef5);
+  border: 1px solid #d7dde7;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.06);
+}
+.intro-photo { position: relative; min-height: 100%; }
+.intro-photo img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 52% 35%;
+}
+.intro-credit {
+  position: absolute; left: 14px; bottom: 10px;
+  font-size: 0.7rem; color: #fff; opacity: 0.85;
+}
+.intro-text {
+  padding: 0 3.2rem;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.intro-eyebrow {
+  font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #294c7a; font-weight: 700; margin-bottom: 1rem;
+}
+main h1.intro-name {
+  font-family: Georgia, serif; font-size: 3.3rem; font-weight: 700;
+  color: #12284a; line-height: 1.02; margin: 0 0 0.9rem 0;
+}
+.intro-inst { font-size: 0.9rem; color: #5d6b80; line-height: 1.5; margin-bottom: 1.4rem; }
+main p.intro-tagline {
+  font-size: 0.98rem; line-height: 1.75; color: #2b2b2b;
+  margin: 0 0 1.6rem 0; padding-left: 1rem; border-left: 3px solid #294c7a;
+}
+.intro-links { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.intro-links a {
+  font-size: 0.78rem; color: #17335c; text-decoration: none;
+  border: 1px solid #c5d0df; border-radius: 999px; padding: 0.38rem 0.7rem;
+  background: #fff; white-space: nowrap; transition: background 0.15s ease;
+}
+.intro-links a:hover { background: #eef2f7; }
+@media (max-width: 980px) {
+  .intro-slide { aspect-ratio: auto; }
+  .intro-card { grid-template-columns: 1fr; }
+  .intro-photo { height: 300px; }
+  .intro-photo img { object-position: 50% 15%; }
+  .hero-slider-arrow { top: 80px; width: 38px; height: 38px; }
+  .intro-text { padding: 1.6rem 1.4rem 1.8rem; }
+  main h1.intro-name { font-size: 2.4rem; }
+}
+
+
 /* cover-image slides: same frame as the business card */
 .cover-slide {
   aspect-ratio: 1200 / 630;
@@ -641,35 +699,22 @@ main td:first-child {
 </div>
 <div class="hero-slider-track">
 <div class="hero-slider-slides">
-<div class="hero-slide">
-<div class="hero-card">
-<div class="hero-photo">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="profile.jpg" class="img-fluid figure-img" width="3843"></p>
-<figcaption>Photo: Sebastian Kissel</figcaption>
-</figure>
+<div class="hero-slide intro-slide">
+<div class="intro-card">
+<div class="intro-photo">
+<img src="profile.jpg" alt="Burak Giray">
+<span class="intro-credit">Photo: Sebastian Kissel</span>
 </div>
-</div>
-<div class="hero-main">
-<div class="name">
-<p>Burak Giray, Ph.D.</p>
-</div>
-<div class="role">
-<p>Postdoctoral Researcher · TUM</p>
-</div>
-<div class="tagline">
-<p>I study IOs, civil war dynamics, and UN peacekeeping, with a focus on how interventions shape conflict outcomes, mandate completions, and local legitimacy.</p>
-</div>
-</div>
-<div class="hero-side">
-<div class="connect-title">
-<p>Connect with Me</p>
-</div>
-<div class="hero-links">
-<p><a href="https://x.com/Burak92Giray"> Twitter <span style="opacity:0.55;">↗</span> </a></p>
-<p><a href="https://bsky.app/profile/bgiray.bsky.social"> Bluesky <span style="opacity:0.55;">↗</span> </a></p>
-<p><a href="https://www.linkedin.com/in/burak-giray-373205368"> LinkedIn <span style="opacity:0.55;">↗</span> </a></p>
+<div class="intro-text">
+<div class="intro-eyebrow">Postdoctoral Researcher</div>
+<h1 class="intro-name">Burak Giray</h1>
+<div class="intro-inst">Munich School of Politics and Public Policy · Technical University of Munich</div>
+<p class="intro-tagline">I study international organizations, civil war dynamics, and UN peacekeeping, with a focus on how interventions shape conflict outcomes, mandate completion, and local legitimacy.</p>
+<div class="intro-links">
+<a href="https://x.com/Burak92Giray" target="_blank" rel="noopener">Twitter / X ↗</a>
+<a href="https://bsky.app/profile/bgiray.bsky.social" target="_blank" rel="noopener">Bluesky ↗</a>
+<a href="https://www.linkedin.com/in/burak-giray-373205368" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a href="https://scholar.google.com/citations?user=SWWelg8AAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
 </div>
 </div>
 </div>
@@ -762,6 +807,57 @@ window.addEventListener('load', () => {
   hyphens: auto;
   -webkit-hyphens: auto;
 }
+
+/* ---------- section styling ---------- */
+main h2.anchored, main section > h2 {
+  font-family: Georgia, serif; font-size: 1.75rem; color: #12284a;
+  border-bottom: none; padding-bottom: 0; margin-top: 3.6rem; margin-bottom: 1.4rem;
+}
+main section > h2::after {
+  content: ''; display: block; width: 44px; height: 3px;
+  background: #294c7a; border-radius: 2px; margin-top: 0.65rem;
+}
+#about .about-text p:first-child { font-size: 1.12rem; color: #17335c; line-height: 1.8; }
+
+/* research areas */
+.area-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; margin-top: 0.4rem; }
+.area-card {
+  background: #fff; border: 1px solid #e1e6ee; border-radius: 14px;
+  padding: 1.4rem 1.5rem; box-shadow: 0 6px 18px rgba(18,40,74,0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.area-card:hover { box-shadow: 0 12px 28px rgba(18,40,74,0.1); transform: translateY(-2px); }
+.area-icon {
+  width: 42px; height: 42px; border-radius: 10px; background: #e8eef6; color: #294c7a;
+  display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 0.9rem;
+}
+.area-title { font-weight: 700; color: #12284a; font-size: 1.02rem; margin-bottom: 0.45rem; }
+main .area-card p { font-size: 0.93rem; line-height: 1.7; color: #4b5a70; margin: 0; }
+
+/* education timeline */
+.edu-timeline { position: relative; margin-left: 0.4rem; padding-left: 1.8rem; border-left: 2px solid #dbe3ee; }
+.edu-item { position: relative; padding-bottom: 1.6rem; }
+.edu-item:last-child { padding-bottom: 0.2rem; }
+.edu-item::before {
+  content: ''; position: absolute; left: calc(-1.8rem - 7px); top: 0.35rem;
+  width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 3px solid #294c7a;
+}
+.edu-year { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; color: #294c7a; margin-bottom: 0.2rem; }
+.edu-degree { font-weight: 700; color: #12284a; font-size: 1.05rem; }
+.edu-inst { color: #4b5a70; font-size: 0.95rem; }
+.edu-note { color: #7a8597; font-size: 0.88rem; margin-top: 0.15rem; }
+
+/* globe legend */
+.globe-legend { display: flex; flex-wrap: wrap; gap: 1.4rem; align-items: center; font-size: 0.88rem; color: #4b5a70; margin-top: 0.6rem; }
+.globe-legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 0.45rem; vertical-align: middle; }
+.globe-legend .pos { background: #f2c94c; }
+.globe-legend .conf { background: #c43d3d; }
+.globe-legend .hint { color: #8a93a3; font-style: italic; margin-left: auto; }
+
+@media (max-width: 760px) {
+  .area-grid { grid-template-columns: 1fr; }
+  .globe-legend .hint { margin-left: 0; }
+}
 </style>
 <div class="about-text" lang="en">
 <p>Hi! I am a Postdoctoral Researcher at the Munich School of Politics and Public Policy (Hochschule für Politik) at the Technical University of Munich.</p>
@@ -773,66 +869,27 @@ window.addEventListener('load', () => {
 </section>
 <section id="research-areas" class="level2">
 <h2 class="anchored" data-anchor-id="research-areas">Research Areas</h2>
-<details>
-<summary>
-International Organizations and Global Governance
-</summary>
-<p>Political behavior, institutional design, and effectiveness of international organizations, with a focus on UN-based institutions. Emphasis on cooperation problems, mandate implementation, and the role of legitimacy in shaping support for multilateral governance.</p>
-</details>
-<details>
-<summary>
-Civil War and Post-Conflict Dynamics
-</summary>
-<p>Violence, intervention, and post-conflict trajectories in intrastate wars, with emphasis on local support, institutional engagement, and conflict outcomes.</p>
-</details>
-<details>
-<summary>
-UN Peacekeeping
-</summary>
-<p>Effectiveness, legitimacy, operational dynamics, troop-contributing country behavior, and civilian protection outcomes in UN peacekeeping missions.</p>
-</details>
-<details>
-<summary>
-Research Methods
-</summary>
-<p>Experimental design, panel data analysis, time-series methods, duration analysis, difference-in-differences, interrupted time-series designs, and causal mediation analysis.</p>
-</details>
+<div class="area-grid">
+<div class="area-card"><div class="area-icon"><i class="bi bi-globe2"></i></div><div class="area-title">International Organizations and Global Governance</div><p>Political behavior, institutional design, and effectiveness of international organizations, with a focus on UN-based institutions. Emphasis on cooperation problems, mandate implementation, and the role of legitimacy in shaping support for multilateral governance.</p></div>
+<div class="area-card"><div class="area-icon"><i class="bi bi-people"></i></div><div class="area-title">Civil War and Post-Conflict Dynamics</div><p>Violence, intervention, and post-conflict trajectories in intrastate wars, with emphasis on local support, institutional engagement, and conflict outcomes.</p></div>
+<div class="area-card"><div class="area-icon"><i class="bi bi-shield-check"></i></div><div class="area-title">UN Peacekeeping</div><p>Effectiveness, legitimacy, operational dynamics, troop-contributing country behavior, and civilian protection outcomes in UN peacekeeping missions.</p></div>
+<div class="area-card"><div class="area-icon"><i class="bi bi-bar-chart-line"></i></div><div class="area-title">Research Methods</div><p>Experimental design, panel data analysis, time-series methods, duration analysis, difference-in-differences, interrupted time-series designs, and causal mediation analysis.</p></div>
+</div>
 </section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Year</th>
-<th>Degree</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2022</td>
-<td><strong>Ph.D.&nbsp;in Political Science</strong> (major: International Relations; minor: Comparative Politics), University of Houston, Texas, United States</td>
-</tr>
-<tr class="even">
-<td>2016</td>
-<td><strong>M.A.&nbsp;in International Relations</strong>, Social Sciences University of Ankara, Ankara, Turkey</td>
-</tr>
-<tr class="odd">
-<td>2014</td>
-<td><strong>B.A. in Translation Studies &amp; Political Science</strong>, Çankaya University, Ankara, Turkey</td>
-</tr>
-</tbody>
-</table>
+<div class="edu-timeline">
+<div class="edu-item"><div class="edu-year">2022</div><div class="edu-degree">Ph.D. in Political Science</div><div class="edu-inst">University of Houston, Texas, United States</div><div class="edu-note">Major: International Relations · Minor: Comparative Politics</div></div>
+<div class="edu-item"><div class="edu-year">2016</div><div class="edu-degree">M.A. in International Relations</div><div class="edu-inst">Social Sciences University of Ankara, Ankara, Turkey</div></div>
+<div class="edu-item"><div class="edu-year">2014</div><div class="edu-degree">B.A. in Translation Studies &amp; Political Science</div><div class="edu-inst">Çankaya University, Ankara, Turkey</div></div>
+</div>
 </section>
 <section id="where-academia-took-me" class="level2">
 <h2 class="anchored" data-anchor-id="where-academia-took-me">Where Academia Took Me</h2>
 <div class="about-text" lang="en">
 <p>This globe shows the locations where I have lived, worked, presented research, or participated in conferences and workshops. Academia has turned me into a bit of a nomad, and honestly that is one of the things I appreciate most about this job. It has given me the chance to spend time in many different places, meet people from different academic communities, and exchange ideas along the way. I leave this here as a small reminder to keep going and hopefully add many more places in the years ahead.</p>
 </div>
-<p><em>(Click pins for details; zoom to explore.)</em></p>
+<div class="globe-legend"><span><span class="dot pos"></span>Positions held</span><span><span class="dot conf"></span>Conferences &amp; workshops</span><span class="hint">Click a pin for details · drag to rotate · scroll to zoom</span></div>
 <style>
 .fullwidth-globe {
   width: 100vw;
@@ -1089,7 +1146,7 @@ window.addEventListener('load', () => {
 </style>
 
 <div class="site-footer">
-  © 2026 Burak Giray · Last updated July 2026 · Built with Quarto
+  © 2026 Burak Giray · Last updated November 2026 · Built with Quarto
 </div>
 
 

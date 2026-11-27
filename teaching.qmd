@@ -4,123 +4,41 @@ format:
   html:
     toc: false
     theme: flatly
-    css: teaching.css
+    css: styles.css
 ---
 
 ```{=html}
-<!-- =========================
-     TUM
-========================= -->
+<style>
+main h1.title { font-family: Georgia, serif; font-weight: 700; color: #12284a; font-size: 2.4rem; }
+.page-lead { font-size: 1.02rem; color: #5d6b80; margin: 0.2rem 0 2.2rem; }
+main h2.sec { font-family: Georgia, serif; font-size: 1.6rem; color: #12284a; border: none;
+  margin: 2.8rem 0 1.3rem; padding: 0; }
+main h2.sec::after { content: ''; display: block; width: 44px; height: 3px; background: #294c7a;
+  border-radius: 2px; margin-top: 0.6rem; }
+.sec-count { font-family: Inter, system-ui, sans-serif; font-size: 0.85rem; color: #8a93a3; font-weight: 500; margin-left: 0.5rem; }
+
+.inst { margin-bottom: 2.6rem; }
+.inst-head { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.1rem; }
+.inst-bar { width: 6px; align-self: stretch; border-radius: 3px; }
+.inst-name { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 700; color: #12284a; line-height: 1.2; }
+.inst-sub { font-size: 0.9rem; color: #6b7588; }
+.course-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.course { background: #fff; border: 1px solid #e1e6ee; border-radius: 14px; padding: 1.2rem 1.3rem;
+  box-shadow: 0 6px 18px rgba(18,40,74,0.04); display: flex; flex-direction: column; }
+.course-top { display: flex; justify-content: space-between; align-items: center; gap: .6rem; margin-bottom: 0.6rem; }
+.course-code { font-size: 0.74rem; font-weight: 700; letter-spacing: .06em; color: #294c7a; background: #e8eef6;
+  border-radius: 6px; padding: 0.2rem 0.55rem; }
+.course-level { font-size: 0.72rem; color: #6b7588; border: 1px solid #d7dde7; border-radius: 999px; padding: 0.15rem 0.6rem; }
+.course-title { font-weight: 700; color: #12284a; font-size: 1.04rem; line-height: 1.4; }
+.course-meta { font-size: 0.86rem; color: #5d6b80; margin-top: 0.3rem; }
+.course-sem { margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px dashed #dbe2ec; }
+.course-sem-label { font-size: 0.7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #8a93a3; margin-bottom: .3rem; }
+main .course-sem ul { margin: 0; padding-left: 1.1rem; }
+main .course-sem li { font-size: 0.9rem; color: #2b2b2b; line-height: 1.55; margin-bottom: .2rem; }
+@media (max-width: 760px) { .course-grid { grid-template-columns: 1fr; } }
+</style>
+<p class="page-lead">Graduate and undergraduate courses on international security, conflict, global governance, and computational methods.</p>
+<section class="inst"><div class="inst-head"><span class="inst-bar" style="background:#0b4f8a"></span><div><div class="inst-name">Technical University of Munich</div><div class="inst-sub">Munich School of Politics and Public Policy · Munich, Germany</div></div></div><div class="course-grid"><div class="course"><div class="course-top"><span class="course-code">SOT86707</span><span class="course-level">Graduate</span></div><div class="course-title">International Security</div><div class="course-meta">Lecturer · Winter 2024 · Summer 2025 · Winter 2025 · Winter 2026</div><div class="course-sem"><div class="course-sem-label">Seminars</div><ul><li>Theoretical Understanding of Interstate and Intrastate Conflicts</li><li>Conflict Resolution Strategies for Peace</li></ul></div></div><div class="course"><div class="course-top"><span class="course-code">SOT86705</span><span class="course-level">Graduate</span></div><div class="course-title">Disruptions in Governance and Technology</div><div class="course-meta">Lecturer · Summer 2024 · Summer 2026</div><div class="course-sem"><div class="course-sem-label">Seminar</div><ul><li>Civil Conflict and Peace Operations in Times of Disruption</li></ul></div></div><div class="course"><div class="course-top"><span class="course-code">SOT86100</span><span class="course-level">Graduate</span></div><div class="course-title">Global Governance</div><div class="course-meta">Lecturer · Winter 2025</div><div class="course-sem"><div class="course-sem-label">Seminar</div><ul><li>Decoding Global Politics: Text as Data in International Relations</li></ul></div></div><div class="course"><div class="course-top"><span class="course-code">POL60701</span><span class="course-level">Graduate</span></div><div class="course-title">Digital Transformations in Europe</div><div class="course-meta">Lecturer · Winter 2024</div><div class="course-sem"><div class="course-sem-label">Seminar</div><ul><li>Textual Data Analytics in EU Contexts</li></ul></div></div></div></section>
+<section class="inst"><div class="inst-head"><span class="inst-bar" style="background:#6f1d46"></span><div><div class="inst-name">Hertie School</div><div class="inst-sub">Berlin, Germany</div></div></div><div class="course-grid"><div class="course"><div class="course-top"><span class="course-code">GRAD-E1450</span><span class="course-level">Graduate</span></div><div class="course-title">Origins of Conflict and Pathways to Peace</div><div class="course-meta">Lecturer · Spring 2024</div></div></div></section>
+<section class="inst"><div class="inst-head"><span class="inst-bar" style="background:#a5472a"></span><div><div class="inst-name">University of Houston</div><div class="inst-sub">Department of Political Science · Houston, Texas</div></div></div><div class="course-grid"><div class="course"><div class="course-top"><span class="course-code">POLS 3389</span><span class="course-level">Undergraduate</span></div><div class="course-title">European Union Politics</div><div class="course-meta">Lecturer · Spring 2021</div></div><div class="course"><div class="course-top"><span class="course-code">POLS 6481</span><span class="course-level">Graduate</span></div><div class="course-title">Quantitative Methods II</div><div class="course-meta">Lab Assistant · Spring 2020</div></div><div class="course"><div class="course-top"><span class="course-code">POLS 6480</span><span class="course-level">Graduate</span></div><div class="course-title">Quantitative Methods I</div><div class="course-meta">Lab Assistant · Fall 2019</div></div></div></section>
 ```
-
-<details class="institution tum">
-
-<summary>Technical University of Munich</summary>
-
-<details class="module">
-
-<summary><strong>SOT86705 – Disruptions in Governance and Technology</strong> [Lecturer · Summer 2024, Summer 2026 (G)]{.module-meta}</summary>
-
-<ul>
-
-<li>Civil Conflict and PeaceOperations in Times of Disruption</li>
-
-</ul>
-
-</details>
-
-<details class="module">
-
-<summary><strong>SOT86707 – International Security</strong> [Lecturer · Winter 2024, Summer 2025, Winter 2025 (G)]{.module-meta}</summary>
-
-<ul>
-
-<li>Theoretical Understanding of Interstate and Intrastate Conflicts</li>
-
-<li>Conflict Resolution Strategies for Peace</li>
-
-</ul>
-
-</details>
-
-<details class="module">
-
-<summary><strong>SOT86100 – Global Governance</strong> [Lecturer · Winter 2025 (G)]{.module-meta}</summary>
-
-<ul>
-
-<li>Decoding Global Politics: Text as Data in International Relations</li>
-
-</ul>
-
-</details>
-
-<details class="module">
-
-<summary><strong>POL60701 – Digital Transformations in Europe</strong> [Lecturer · Winter 2024 (G)]{.module-meta}</summary>
-
-<ul>
-
-<li>Textual Data Analytics in EU Contexts</li>
-
-</ul>
-
-</details>
-
-</details>
-
-```{=html}
-<!-- =========================
-     HERTIE
-========================= -->
-```
-
-<details class="institution hertie">
-
-<summary>Hertie School</summary>
-
-<details class="module">
-
-<summary><strong>GRAD‑E1450 – Origins of Conflict and Pathways to Peace</strong> [Lecturer · Spring 2024 (G)]{.module-meta}</summary>
-
-</details>
-
-</details>
-
-```{=html}
-<!-- =========================
-     UH
-========================= -->
-```
-
-<details class="institution uh">
-
-<summary>University of Houston</summary>
-
-<details class="module">
-
-<summary><strong>POLS 3389 – European Union Politics</strong> [Lecturer · Spring 2021 (U)]{.module-meta}</summary>
-
-</details>
-
-<details class="module">
-
-<summary><strong>POLS 6481 – Quantitative Methods II</strong> [Lab Assistant · Spring 2020 (G)]{.module-meta}</summary>
-
-</details>
-
-<details class="module">
-
-<summary><strong>POLS 6480 – Quantitative Methods I</strong> [Lab Assistant · Fall 2019 (G)]{.module-meta}</summary>
-
-</details>
-
-</details>
-
-<!-- LAST INSTITUTION DETAILS ABOVE -->
-
-</details>
-
-::: teaching-footnote
-U: Undergraduate level  \|  G: Graduate level
-:::
