@@ -701,9 +701,11 @@ main p.intro-tagline {
 <div class="hero-slider-slides">
 <div class="hero-slide intro-slide">
 <div class="intro-card">
-<div class="intro-photo">
-<img src="profile.jpg" alt="Burak Giray">
-<span class="intro-credit">Photo: Sebastian Kissel</span>
+<div class="intro-photo" onclick="if (window.matchMedia('(hover: none)').matches) this.classList.toggle('flipped')" title="Then and now">
+<div class="flip-inner">
+<div class="flip-face flip-front"><img src="profile.jpg" alt="Burak Giray"><span class="intro-credit">Photo: Sebastian Kissel</span></div>
+<div class="flip-face flip-back"><img src="houston.jpg" alt="Burak Giray at the University of Houston"><span class="intro-credit">University of Houston · 2016–2022</span></div>
+</div>
 </div>
 <div class="intro-text">
 <div class="intro-eyebrow">Postdoctoral Researcher</div>
@@ -834,37 +836,36 @@ main section > h2::after {
 .area-title { font-weight: 700; color: #12284a; font-size: 1.02rem; margin-bottom: 0.45rem; }
 main .area-card p { font-size: 0.93rem; line-height: 1.7; color: #4b5a70; margin: 0; }
 
-/* Houston photo button + lightbox */
-.edu-photo { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 0.75rem;
-  padding: 0.22rem 0.85rem 0.22rem 0.22rem; border: 1px solid #d7dde7; border-radius: 999px;
-  background: #fff; cursor: pointer; font-size: 0.82rem; color: #17335c; transition: background .15s ease, box-shadow .15s ease; }
-.edu-photo:hover { background: #eef2f7; box-shadow: 0 4px 12px rgba(18,40,74,.08); }
-.edu-photo .thumb { width: 34px; height: 34px; border-radius: 50%; overflow: hidden; position: relative; flex-shrink: 0; }
-.edu-photo .thumb img { position: absolute; width: 120px; height: auto; left: -28px; top: -6px; max-width: none; }
-.uh-lightbox { position: fixed; inset: 0; background: rgba(10,20,40,.72); display: none;
-  align-items: center; justify-content: center; z-index: 2000; cursor: zoom-out; padding: 1rem; }
-.uh-lightbox.open { display: flex; }
-.uh-lightbox figure { margin: 0; background: #fff; padding: 12px 12px 10px; border-radius: 14px;
-  max-width: min(90vw, 520px); box-shadow: 0 24px 60px rgba(0,0,0,.35); }
-.uh-lightbox img { width: 100%; display: block; border-radius: 8px; }
-.uh-lightbox figcaption { text-align: center; font-size: .85rem; color: #5d6b80; margin-top: .55rem; }
+/* flip: hover the portrait to see the Houston photo (tap on touch screens) */
+.intro-photo { perspective: 1600px; cursor: pointer; }
+.flip-inner { position: absolute; inset: 0; transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { .intro-photo:hover .flip-inner { transform: rotateY(180deg); } }
+.intro-photo.flipped .flip-inner { transform: rotateY(180deg); }
+.flip-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }
+.flip-back { transform: rotateY(180deg); }
+.intro-credit { text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+.flip-back img { object-position: 42% 30% !important; }
 
-/* education timeline (horizontal) */
-.edu-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; position: relative; padding-top: 1.9rem; }
-.edu-timeline::before { content: ''; position: absolute; top: 6px; left: 6px; right: 6px; height: 2px; background: #dbe3ee; }
-.edu-item { position: relative; }
-.edu-item::before {
-  content: ''; position: absolute; left: 0; top: calc(-1.9rem + 1px);
-  width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 3px solid #294c7a;
-}
-.edu-year { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; color: #294c7a; margin-bottom: 0.3rem; }
-.edu-degree { font-weight: 700; color: #12284a; font-size: 1.02rem; line-height: 1.4; }
-.edu-inst { color: #4b5a70; font-size: 0.92rem; margin-top: 0.2rem; }
-.edu-note { color: #7a8597; font-size: 0.86rem; margin-top: 0.2rem; }
+/* education: three colour-graded tiles rising like steps (B.A. -> M.A. -> Ph.D.) */
+.edu-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; align-items: end; }
+.edu-step { position: relative; overflow: hidden; border-radius: 16px; padding: 1.3rem 1.35rem 1.25rem;
+  display: flex; flex-direction: column; justify-content: flex-end; }
+.edu-step .bg-year { position: absolute; top: -0.35rem; right: 0.6rem; font-family: Georgia, serif;
+  font-size: 4.6rem; font-weight: 700; line-height: 1; opacity: 0.13; pointer-events: none; }
+.edu-step .lvl { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 0.55rem; }
+.edu-step .deg { font-weight: 700; font-size: 1.06rem; line-height: 1.35; }
+.edu-step .inst { font-size: 0.9rem; margin-top: 0.3rem; line-height: 1.45; }
+.edu-step .note { font-size: 0.82rem; margin-top: 0.25rem; opacity: 0.85; }
+.edu-step.s1 { min-height: 190px; background: #e9eef5; color: #17335c; }
+.edu-step.s2 { min-height: 235px; background: #b9cbe2; color: #12284a; }
+.edu-step.s3 { min-height: 280px; background: linear-gradient(160deg, #294c7a 0%, #12284a 100%); color: #fff; }
+.edu-step.s1 .inst, .edu-step.s2 .inst { color: #3f5170; }
+.edu-step.s3 .inst { color: #d6e1f0; }
+.edu-step.s3 .lvl { color: #f2c94c; }
 @media (max-width: 760px) {
-  .edu-timeline { grid-template-columns: 1fr; padding-top: 0; padding-left: 1.6rem; border-left: 2px solid #dbe3ee; }
-  .edu-timeline::before { display: none; }
-  .edu-item::before { left: calc(-1.6rem - 7px); top: 0.3rem; }
+  .edu-steps { grid-template-columns: 1fr; }
+  .edu-step.s1, .edu-step.s2, .edu-step.s3 { min-height: 0; }
 }
 
 @media (max-width: 760px) {
@@ -890,19 +891,12 @@ main .area-card p { font-size: 0.93rem; line-height: 1.7; color: #4b5a70; margin
 </section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
-<div class="edu-timeline">
-<div class="edu-item"><div class="edu-year">2022</div><div class="edu-degree">Ph.D. in Political Science</div><div class="edu-inst">University of Houston, Texas, United States</div><div class="edu-note">Major: International Relations · Minor: Comparative Politics</div><button type="button" class="edu-photo" onclick="openUH()" aria-label="Open a photo from my time at the University of Houston"><span class="thumb"><img src="houston.jpg" alt=""></span><span>Houston days</span></button></div>
-<div class="edu-item"><div class="edu-year">2016</div><div class="edu-degree">M.A. in International Relations</div><div class="edu-inst">Social Sciences University of Ankara, Ankara, Turkey</div></div>
-<div class="edu-item"><div class="edu-year">2014</div><div class="edu-degree">B.A. in Translation Studies &amp; Political Science</div><div class="edu-inst">Çankaya University, Ankara, Turkey</div></div>
+<div class="edu-steps">
+<div class="edu-step s1"><span class="bg-year">2014</span><div class="lvl">Bachelor · 2014</div><div class="deg">B.A. in Translation Studies &amp; Political Science</div><div class="inst">Çankaya University, Ankara, Turkey</div></div>
+<div class="edu-step s2"><span class="bg-year">2016</span><div class="lvl">Master · 2016</div><div class="deg">M.A. in International Relations</div><div class="inst">Social Sciences University of Ankara, Ankara, Turkey</div></div>
+<div class="edu-step s3"><span class="bg-year">2022</span><div class="lvl">Doctorate · 2022</div><div class="deg">Ph.D. in Political Science</div><div class="inst">University of Houston, Texas, United States</div><div class="note">Major: International Relations · Minor: Comparative Politics</div></div>
 </div>
-<div id="uh-lightbox" class="uh-lightbox" onclick="closeUH()" role="dialog" aria-label="Photo from the University of Houston">
-<figure><img src="houston.jpg" alt="Burak Giray at the University of Houston"><figcaption>University of Houston · 2016–2022</figcaption></figure>
-</div>
-<script>
-function openUH(){ document.getElementById('uh-lightbox').classList.add('open'); }
-function closeUH(){ document.getElementById('uh-lightbox').classList.remove('open'); }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeUH(); });
-</script>
+
 </section>
 <style>
 .site-footer {
