@@ -1,5 +1,5 @@
 ---
-title: "Do UN Missions Have an Expiration Date? Ideational Commitment to the UN and the Duration of Missions"
+title: "Do UN Missions Have an Expiration Date? Ideational Commitment to UN Peacekeeping and the Length of Missions"
 toc: false
 lang: en
 include-in-header:

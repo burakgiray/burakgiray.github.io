@@ -1,0 +1,293 @@
+%% CV of Burak Giray -- based on the moderncv template by Xavier Danaux (LPPL 1.3c)
+
+\documentclass[11pt,a4paper,roman]{moderncv}
+
+\moderncvcolor{blue}
+\moderncvstyle{banking}
+
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage[scale=0.8]{geometry}
+\usepackage{enumitem}
+
+% consistent list spacing (replaces the manual \vspace between items)
+\setlist[itemize]{itemsep=1mm, topsep=1mm, parsep=0pt}
+\setlist[itemize,2]{itemsep=0.5mm, topsep=0.5mm}
+
+% personal data
+\name{Burak}{Giray}
+\title{TU Munich}
+\address{Richard-Wagner-Straße 1}{80333 Munich, Germany}{}
+\phone[fixed]{+49~89~907~793-25}
+\email{giray.burak@tum.de}
+\homepage{www.burakgiray.com}
+
+% entry: #2 date, #3 position, #4 institution, #5 place, #6 (unused), #7 description
+\newcommand*{\customcventry}[7][.25em]{%
+  \begin{tabular}{@{}l}{\bfseries #4}\end{tabular}%
+  \hfill%
+  \begin{tabular}{l@{}}{\bfseries #5}\end{tabular}\\
+  \begin{tabular}{@{}l}{\itshape #3}\end{tabular}%
+  \hfill%
+  \begin{tabular}{l@{}}{\itshape #2}\end{tabular}%
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}\small#7\end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+\emergencystretch=3em % avoids overfull lines caused by long DOIs
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$\diamond$}
+
+\begin{document}
+
+\makecvtitle
+\vspace*{-8mm}
+
+%----------------------------------------------------------------------------------
+\section{EMPLOYMENT}
+
+\customcventry{May 2024 -- Present}{Postdoctoral Researcher, Munich School of Politics and Public Policy}{Technical University of Munich}{Munich, Germany}{}{}
+\vspace*{-5mm}
+\customcventry{}{Chair of European and Global Governance}{}{}{}{}
+\vspace*{2mm}
+
+\customcventry{Feb 2023 -- Apr 2024}{Postdoctoral Researcher, Centre for International Security}{Hertie School}{Berlin, Germany}{}{}
+\vspace*{2mm}
+
+\customcventry{Mar 2023 -- Feb 2024}{Visiting Researcher, Department of Peace and Conflict Research}{Uppsala University}{Uppsala, Sweden}{}{}
+\vspace*{2mm}
+
+\customcventry{Aug 2021 -- Dec 2022}{Research Assistant, Hobby School of Public Affairs}{University of Houston}{Houston, Texas}{}{}
+\vspace*{-5mm}
+\customcventry{Aug 2017 -- Jul 2021}{Teaching Assistant, Department of Political Science}{}{}{}{}
+
+%----------------------------------------------------------------------------------
+\section{EDUCATION}
+
+\customcventry{Fall 2022}{Ph.D. in Political Science}{University of Houston}{Houston, Texas}{}{}
+\textit{Dissertation:} ``UN Peacekeeping Operations: Conflicting Interests and Effectiveness''\\
+\textit{Committee:} J. Tyson Chatagnier (Chair), Patrick Shea, Nikolay Marinov, J. Michael Greig
+\vspace*{3mm}
+
+\customcventry{Spring 2016}{M.A. in International Relations}{Social Sciences University of Ankara}{Ankara, Turkey}{}{}
+\vspace*{2mm}
+
+\customcventry{Spring 2014}{B.A. in Translation Studies, Double Major in Political Science}{\c{C}ankaya University}{Ankara, Turkey}{}{}
+\vspace*{2mm}
+
+\customcventry{Spring 2012}{Erasmus Exchange, English Language and Literature}{University of Valencia}{Valencia, Spain}{}{}
+
+%----------------------------------------------------------------------------------
+\section{RESEARCH INTERESTS}
+
+UN Peacekeeping Operations $\bullet$ Conflict and Peace Processes $\bullet$ International Organizations $\bullet$ Causal Inference and Research Design $\bullet$ Computational Social Science
+
+%----------------------------------------------------------------------------------
+\section{PEER-REVIEWED ARTICLES}
+
+\begin{itemize}
+  \item \textbf{Giray, Burak.} (2026). The COVID-19 Pandemic and the Adaptation of Peacekeeping Activities: An Analysis of Official MONUSCO Tweets. \textit{Medicine, Conflict and Survival}, 1--19, online first. \href{https://doi.org/10.1080/13623699.2026.2764019}{DOI: 10.1080/13623699.2026.2764019}.
+  \item \textbf{Giray, Burak.} (2026). Winning Peace Indirectly: How UN Peacekeepers' Security Activities Shape Local Support and Conflict Dynamics. \textit{Global Studies Quarterly}, 6(3), ksag120. \href{https://doi.org/10.1093/isagsq/ksag120}{DOI: 10.1093/isagsq/ksag120}.
+  \item \textbf{Giray, Burak} and J. Tyson Chatagnier. (2024). Election Accomplished: Democracies and the Timing of Peacekeeper Drawdowns. \textit{Political Research Quarterly}, 77(1), 3--16. \href{https://doi.org/10.1177/10659129231190614}{DOI: 10.1177/10659129231190614}.
+  \item \textbf{Giray, Burak.} (2024). Do UN Missions Have an Expiration Date? Ideational Commitment to UN Peacekeeping and the Length of Missions. \textit{International Peacekeeping}, 31(1), 1--28. \href{https://doi.org/10.1080/13533312.2023.2246362}{DOI: 10.1080/13533312.2023.2246362}.
+  \item \textbf{Giray, Burak.} (2023). Ideational Commitment to UN Peacekeeping and Effectiveness. \textit{International Interactions}, 49(3), 372--400. \href{https://doi.org/10.1080/03050629.2023.2184813}{DOI: 10.1080/03050629.2023.2184813}.
+  \item \textbf{Giray, Burak.} (2022). Public Support for UN Missions and Attacks on Peacekeepers: Evidence from the Democratic Republic of the Congo. \textit{Peace Economics, Peace Science and Public Policy}, 28(4), 305--332. \href{https://doi.org/10.1515/peps-2022-0028}{DOI: 10.1515/peps-2022-0028}.
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{WORK UNDER REVIEW}
+
+\begin{itemize}
+  \item ``Online Communication and Peacekeeping: New Evidence on Operational Activities and Effectiveness.'' \textit{Under review.}
+  \item ``From Field to Feed: Troop-Contributing Countries in the Spotlight of UN Social Media.'' \textit{Under review.}
+  \item ``Repaying Debt with Land: Debt Diplomacy, Domestic Politics, and Land Transactions'' (with Jonas Bunte and Patrick Shea). \textit{Under review.}
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{WORK IN PROGRESS}
+
+\begin{itemize}
+  \item ``Out of Sight, Out of Rights? Digital Responses to Protests in Democratic Territorial Possessions'' (with J. Tyson Chatagnier)
+  \item ``Speaking Carefully: Comment Editing as a Behavioral Indicator of Political Self-Censorship'' (with Ilker Kal{\i}n)
+  \item ``UN Peacekeeping on Social Media: Strategic Communication with Local and International Audiences'' (with Lisa Hultman)
+  \item ``The Composition of Peacekeepers and the Timing of Post--Civil War Elections''
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{POLICY REPORTS}
+
+\begin{itemize}
+  \item Arg{\"u}elles, Maria P. Perez, Savannah L. Sipole, Karen Banda, Gail Buttorff, Renee Cross, \textbf{Burak Giray}, Jim Granato, Mark Jones, Samad Karimov, Richard Murray, Pablo M. Pinto, Bob Stein, Agust{\'i}n Vallejo, and M. C. Sunny Wong. (July 25, 2022). \href{http://m2s-conf.uh.edu/hobby/harvey/harvey_4_vulnerability_report_final.pdf}{\textit{Social Vulnerability \& Natural Disasters: 5 Years after Hurricane Harvey}}. Hobby School of Public Affairs Report.
+  \item Arg{\"u}elles, Maria P. Perez, Gail Buttorff, Renee Cross, \textbf{Burak Giray}, Jim Granato, Mark Jones, Richard Murray, Pablo M. Pinto, Savannah L. Sipole, Bob Stein, Agust{\'i}n Vallejo, and M. C. Sunny Wong. (August 25, 2022). \href{http://m2s-conf.uh.edu/hobby/harvey/harvey_5_report.pdf}{\textit{The Storm that Changed Houston: Reflections on Houstonians' Preparedness and Resiliency on Hurricane Harvey's Fifth Anniversary}}. Hobby School of Public Affairs Report.
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{INVITED TALKS AND WORKSHOPS}
+
+\begin{itemize}
+  \item ``The Future of Peace Operations and Military Interventions,'' Swedish Defence University, Stockholm, Sweden, November 29--30, 2023.
+  \item Guest Lecture, ``Troop-Providers' Primary Interests and UN Peacekeeping Effectiveness,'' United Nations Student Association of Barcelona, Spain, November 27, 2023.
+  \item ``Civilian Dimension of Peacekeeping and Human Rights Promotion,'' Uppsala University, Uppsala, Sweden, November 23--24, 2023.
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{CONFERENCE PARTICIPATION}
+
+\begin{itemize}
+  \item \textbf{25th Jan Tinbergen European Peace Science Conference}, 2026 (Paper)
+  \item \textbf{13th Annual Conference of the Leibniz Institute for East and Southeast European Studies (IOS)}, 2026 (Paper)
+  \item \textbf{Annual Workshop of the Working Group ``Empirical Methods in Peace and Conflict Research'' of the German Association for Peace and Conflict Studies (AFK)}, 2025 (Paper)
+  \item \textbf{24th Jan Tinbergen European Peace Science Conference}, 2025 (Paper)
+  \item \textbf{Annual Meeting of the International Studies Association (ISA)}, 2025 (Paper)
+  \item \textbf{Annual Meeting of the European Political Science Association (EPSA)}, 2024 (Paper)
+  \item \textbf{12th Eurasian Peace Science Conference}, 2024 (Paper)
+  \item \textbf{Annual Meeting of the Midwest Political Science Association (MPSA)}, 2023 (Paper)
+  \item \textbf{Southern Workshop in Empirical Political Science}, 2022 (Poster)
+  \item \textbf{Annual Meeting of the Southern Political Science Association (SPSA)}, 2022, 2019, 2018 (Papers)
+  \item \textbf{Texas Triangle International Relations Conference}, 2021, 2019 (Papers)
+  \item \textbf{Annual Meeting of the American Political Science Association (APSA)}, 2019 (Paper)
+  \item \textbf{Third Annual Tartu Conference on Russian and East European Studies}, 2018 (Paper)
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{TEACHING INTERESTS}
+
+International Relations $\bullet$ Comparative Politics $\bullet$ International Organizations $\bullet$ International Security $\bullet$ Civil War \& Terrorism
+
+%----------------------------------------------------------------------------------
+\section{TEACHING EXPERIENCE}
+
+\customcventry{}{Lecturer}{Technical University of Munich}{Munich, Germany}{}{}
+\begin{itemize}
+  \item SOT86705, Disruptions in Governance and Technology: Summer 2024 (G), Summer 2026 (G)
+    \begin{itemize}
+      \item Civil Conflict and Peace Operations in Times of Disruption
+    \end{itemize}
+  \item SOT86707, International Security: Winter 2024 (G), Summer 2025 (G), Winter 2025 (G), Winter 2026 (G)
+    \begin{itemize}
+      \item Theoretical Understanding of Interstate and Intrastate Conflicts
+      \item Conflict Resolution Strategies for Peace
+    \end{itemize}
+  \item SOT86100, Global Governance: Winter 2025 (G)
+    \begin{itemize}
+      \item Decoding Global Politics: Text as Data in International Relations
+    \end{itemize}
+  \item POL60701, Digital Transformations in Europe: Winter 2024 (G)
+    \begin{itemize}
+      \item Textual Data Analytics in EU Contexts
+    \end{itemize}
+\end{itemize}
+\vspace*{3mm}
+
+\customcventry{}{Lecturer}{Hertie School}{Berlin, Germany}{}{}
+\begin{itemize}
+  \item GRAD-E1450, Origins of Conflict and Pathways to Peace: Spring 2024 (G)
+\end{itemize}
+\vspace*{3mm}
+
+\customcventry{}{Lecturer}{University of Houston, Department of Political Science}{Houston, Texas}{}{}
+\begin{itemize}
+  \item POLS 3389, European Union Politics: Spring 2021 (U)
+\end{itemize}
+\vspace*{1mm}
+
+\customcventry{}{Laboratory Assistant}{}{}{}{}
+\begin{itemize}
+  \item POLS 6481, Quantitative Methods II: Spring 2020 (G)
+  \item POLS 3316, Statistics for Political Scientists: Spring 2020 (U)
+  \item POLS 6480, Quantitative Methods I: Fall 2019 (G)
+\end{itemize}
+\vspace*{1mm}
+
+\customcventry{}{Teaching Assistant}{}{}{}{}
+\begin{itemize}
+  \item POLS 4343, Causes and Politics of War: Spring 2019 (U)
+  \item POLS 3313, Introduction to International Relations: Spring 2018, Fall 2018 (U)
+  \item POLS 6332, Formal Models in International Relations: Fall 2018 (G)
+  \item POLS 3331, American Foreign Policy: Fall 2017, Spring 2018 (U)
+\end{itemize}
+
+\vspace*{1mm}
+\noindent\small{(G) = graduate, (U) = undergraduate}\normalsize
+
+%----------------------------------------------------------------------------------
+\section{SERVICE}
+
+\begin{itemize}
+  \item Thesis Supervision
+    \begin{itemize}
+      \item Julia Pia Walter, Master's thesis, \textit{in progress}
+      \item Johannes Boss, Bachelor's thesis, 2026
+    \end{itemize}
+  \item Referee \href{https://www.webofscience.com/wos/author/rid/ACC-8915-2022}{[Web of Science researcher profile]}
+    \begin{itemize}
+      \item \textit{Journal of Politics}
+      \item \textit{International Peacekeeping}
+      \item \textit{Conflict Management and Peace Science}
+      \item \textit{International Journal of Strategic Communication}
+    \end{itemize}
+  \item Discussant
+    \begin{itemize}
+      \item Workshop on Conflict Dynamics, Technical University of Munich, Raitenhaslach, Germany, October 9--10, 2024
+      \item Junior Scholars in International Security (JSISE) Workshop, online, January 31, 2023
+      \item SPSA 2022, Panel: International Conflict and Security
+    \end{itemize}
+  \item Professional Memberships
+    \begin{itemize}
+      \item Network of European Peace Scientists (NEPS)
+      \item ECPR Standing Groups on International Relations and on Critical Peace and Conflict Studies
+      \item Peace Research Community Europe (PEACE), COST Action
+    \end{itemize}
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{GRANTS AND AWARDS}
+
+\begin{itemize}
+  \item Technical University of Munich, Performance-Related Pay (Leistungsorientierte Bezahlung), 2026, \euro 1,000
+  \item Technical University of Munich, Leonhard Lorenz Foundation (Leonhard-Lorenz-Stiftung) Grant, 2025, \euro 3,150
+  \item Technical University of Munich, HfP Seed Funding for Outstanding Postdoctoral Projects, 2025, \euro 5,300
+  \item German Academic Exchange Service (DAAD), Postdoctoral Researchers International Mobility Experience (PRIME) Fellowship, 2023--2024
+  \item University of Houston, Graduate Tuition Fellowship, 2017--2022
+  \item University of Houston, Cullen Graduate Student Success Fellowship (CGSSF), 2021, \$500
+  \item APSA Travel Grant, 2019, \$250
+  \item Prestage-Cook Travel Award, 2018, \$300
+  \item University of Houston, PhD Scholarship for Student Excellence, 2016, \$1,000
+  \item \c{C}ankaya University, Undergraduate Tuition Fellowship
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{ADDITIONAL TRAINING}
+
+\begin{itemize}
+  \item Survey Design, ECPR Methods School (virtual), March 24--28, 2025
+  \item STaRT@Rice (Statistical Training and Research Techniques), Rice University, October 7--11, 2022
+  \item CIRTL Associate Level, University of Houston, 2022
+  \item CIVICA Data Science Summer School, July 9--30, 2021
+  \item Text Mining, Scraping and Sentiment Analysis with R, Udemy, 2021
+  \item Data Manipulation with dplyr in R, Udemy, 2021
+  \item Text Analysis, University of Houston, 2020
+  \item Data Analytics for Public Policy, Hobby School of Public Affairs, University of Houston, 2020
+\end{itemize}
+
+%----------------------------------------------------------------------------------
+\section{SKILLS}
+
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l}
+  Software  & R, Stata \\
+  Languages & Turkish (native), English (fluent), \\
+            & Spanish (intermediate), German (lower intermediate) \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------
+\section{REFERENCES}
+
+\textit{Available upon request.}
+
+\vfill\rightline{\emph{Last updated \today.}}
+
+\end{document}
